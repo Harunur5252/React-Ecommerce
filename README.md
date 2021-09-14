@@ -1,6 +1,35 @@
-# Getting Started with Create React App
+# React E-commerce
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+### project description
+This is a e-commerce project design(Responsive) is used react js.
+
+## Project Picture Samples
+
+### header section
+![React E-commerce!](/src/images/header.PNG "React E-commerce")
+
+### feature section
+![feature!](/src/images/feature.PNG "feature")
+
+### offer section
+![offer!](/src/images/offer.PNG "offer")
+
+### testimonial section
+![testimonial!](/src/images/testimonial.PNG "testimonial")
+
+### gallery section
+![gallery!](/src/images/gallery.PNG "gallery")
+
+### cart section
+![cart!](/src/images/cart-img.PNG "cart")
+
+### account section
+![account!](/src/images/account.PNG "account")
+
+### footer section
+![footer!](/src/images/footer.PNG "footer")
 
 ## Available Scripts
 
