@@ -1,0 +1,317 @@
+@media (max-width: 400.95px) { 
+
+    .header{
+       margin-right: 10%;
+    }
+    .header-img{
+       width: 360px;
+    }
+    .test-margin{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .offer-img{
+        height: 230px;
+        width: 250px;
+    }
+    .offer-margin-text{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .brands-margin{
+        margin: 0 0 0 86px;
+        padding: 2px;
+     }
+     .footer-row{
+        padding: 60px 0 0 65px;
+    }
+    .footer-row p{
+        text-align: center;
+    }
+    .hr{
+        width: 280px;
+    }
+    .cart-quantity{
+        margin-top: 150%;
+    }
+    .cart-price{
+        margin-top: 210%;
+    }
+    .hr-2{
+        width: 380px;
+    }
+    .account-img-size{
+        height:430px;
+        width:375px;
+    }
+    .product-d-name{
+        font-size: 30px !important;
+    }
+    
+    
+}
+
+@media (min-width: 574px) and (max-width: 575.98px) { 
+
+ .header{
+    margin-right: 10%;
+ }
+ .header-img{
+    width: 516px;
+ }
+ .test-margin{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.offer-img{
+    height: 300px;
+    width: 350px;
+}
+.offer-margin-text{
+    text-align: center;
+    margin-top: 8%;
+}
+.footer-row{
+    padding: 60px 0 0 140px;
+}
+.brands-margin{
+    margin: 0 0 0 153px;
+    padding: 2px;
+ }
+
+.hr{
+    width: 280px;
+}
+.copyright{
+    margin-right: 100px;
+}
+.cart-quantity{
+    margin-top: 100%;
+}
+.cart-price{
+    margin-top: 145%;
+}
+.hr-2{
+    width: 550px;
+}
+.account-img-size{
+    height:430px;
+    width:550px;
+}
+.product-d-name{
+    font-size: 33px !important;
+}
+    
+}
+
+
+@media (min-width: 576px) and (max-width: 768px) { 
+    .header{
+        margin-right: 10%;
+     }
+     .header-img{
+        width: 518px;
+     }
+     .test-margin{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .offer-img{
+        height: 400px;
+        width: 350px;
+    }
+    .offer-margin-text{
+        text-align: center;
+        margin-top: 8%;
+    }
+    .brands-margin{
+        margin: 0 0 0 148px;
+        padding: 2px;
+     }
+     .footer-row{
+        padding: 60px 0 0 140px;
+    }
+    .hr{
+        width: 280px;
+    }
+    .cart-quantity{
+        margin-top: 100%;
+    }
+    .cart-price{
+        margin-top: 145%;
+    }
+    .hr-2{
+        width: 517px;
+    }
+    .account-img-size{
+        height:430px;
+        width:550px;
+    }
+    .product-d-name{
+        font-size: 33px !important;
+    }
+    
+}
+
+ @media (min-width: 768px) and (max-width: 992px) { 
+    .header{
+        margin-right: 10%;
+     }
+     .header-img{
+        width: 330px;
+     }
+     .header{
+        margin-top: 27%;
+        margin-left: 5%;
+     }
+     .test-margin{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .offer-img{
+        height: 430px;
+        width: 350px;
+    }
+    .offer-margin-text{
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 20%;
+    }
+    .offer-margin{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .footer-row{
+        padding: 60px 0 0 100px;
+    }
+    .brands-margin{
+        margin: 0 0 0 130px;
+        padding: 2px;
+     }
+    .hr{
+        width: 580px;
+    }
+    .cart-quantity{
+        margin-top: 86%;
+    }
+    .cart-price{
+        margin-top: 126%;
+    }
+    .hr-2{
+        width: 695px;
+    }
+    .account-img-size{
+        height:400px;
+        width:350px;
+    }
+    .product-d-name{
+        font-size: 33px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) { 
+    .header{
+        margin-right: 10%;
+     }
+     .header-img{
+        width: 430px;
+     }
+     .header{
+        margin-top: 20%;
+        margin-left: 5%;
+     }
+     .test-margin{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .offer-img{
+        height: 450px;
+        width: 500px;
+    }
+    .offer-margin-text{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 23%;
+    }
+    .brands-margin{
+        margin: 6px;
+     }
+     .footer-row{
+        padding: 60px 0 0 80px;
+    }
+    .hr{
+        width: 880px;
+    }
+    .footer-column{
+        min-width: 200px;
+        margin-bottom: 20px;
+     }
+     .cart-quantity{
+        margin-top: 20%;
+    }
+    .cart-price{
+        margin-top: 29%;
+    }
+    .hr-2{
+        width: 936px;
+    }
+    .account-img-size{
+        height: 400px;
+        width : 455px;
+    }
+    .product-d-name{
+        font-size: 36px !important;
+    }
+}
+@media (min-width:1200px) and (max-width: 1354px) { 
+    .header{
+        margin-right: 10%;
+     }
+     .header-img{
+        width: 528px;
+     }
+     .header{
+        margin-top: 17%;
+        margin-left: 5%;
+     }
+     .test-margin{
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .offer-img{
+        height: 450px;
+        width: 500px;
+    }
+    .offer-margin-text{
+        margin-left: 0;
+        margin-right: 20%;
+        margin-top: 19%;
+    }
+    .footer-row{
+        padding: 60px 0 0 110px;
+    }
+    .brands-margin{
+        margin: 0 0 0 60px;
+        padding: 2px;
+     }
+    .hr{
+        width: 1010px;
+    }
+    .cart-quantity{
+        margin-top: 20%;
+    }
+    .cart-price{
+        margin-top: 29%;
+    }
+    .hr-2{
+        width: 1117px;
+    }
+    .account-img-size{
+        height: 400px;
+        width : 555px;
+    }
+    .product-d-name{
+        font-size: 40px !important;
+    }
+
+}
