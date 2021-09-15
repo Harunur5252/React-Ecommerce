@@ -17,7 +17,7 @@ export default class TopNavigation extends Component {
         return (
             <Fragment>
                  <title>{this.state.title}</title>
-               <Navbar bg="success" variant="dark" expand="lg">
+               <Navbar bg="success" variant="dark" expand="lg" sticky="top">
                     <Container fluid>
                        
                         <Navbar.Brand>
@@ -36,9 +36,10 @@ export default class TopNavigation extends Component {
                         <Nav className="m-auto">
                             <Nav.Link> <NavLink className="nav-title" exact to='/'>Home</NavLink></Nav.Link>
                             <Nav.Link> <NavLink className="nav-title" exact to='/products'>Products</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/'>About</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/'>Contact</NavLink></Nav.Link>
+                            <Nav.Link> <NavLink className="nav-title" exact to='/about'>About</NavLink></Nav.Link>
+                            <Nav.Link> <NavLink className="nav-title" exact to='/contact'>Contact</NavLink></Nav.Link>
                             <Nav.Link> <NavLink className="nav-title" exact to='/account'>Account</NavLink></Nav.Link>
+                            <Nav.Link> <NavLink className="nav-title" exact to='/helps_more'>Helps & More</NavLink></Nav.Link>
                         </Nav>
                         <HashRouter><NavLink exact to="/cart"><img src={cartImg} className="cart-img"/></NavLink></HashRouter>
                         </Navbar.Collapse>

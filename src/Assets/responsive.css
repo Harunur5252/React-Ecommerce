@@ -47,6 +47,12 @@
     .product-d-name{
         font-size: 30px !important;
     }
+    .about-back-img-2{
+        min-height: 220px;
+    }
+    .margin-con{
+        margin-top: 38%;
+    }
     
     
 }
@@ -101,6 +107,12 @@
 .product-d-name{
     font-size: 33px !important;
 }
+.about-back-img-2{
+    min-height: 320px;
+}
+.margin-con{
+    margin-top: 25%;
+}
     
 }
 
@@ -149,6 +161,12 @@
     }
     .product-d-name{
         font-size: 33px !important;
+    }
+    .about-back-img-2{
+        min-height: 320px;
+    }
+    .margin-con{
+        margin-top: 25%;
     }
     
 }
@@ -207,6 +225,12 @@
     .product-d-name{
         font-size: 33px !important;
     }
+    .about-back-img-2{
+        min-height: 400px;
+    }
+    .margin-con{
+        margin-top: 20%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) { 
@@ -262,6 +286,12 @@
     .product-d-name{
         font-size: 36px !important;
     }
+    .about-back-img-2{
+        min-height: 560px;
+    }
+    .margin-con{
+        margin-top: 15%;
+    }
 }
 @media (min-width:1200px) and (max-width: 1354px) { 
     .header{
@@ -312,6 +342,12 @@
     }
     .product-d-name{
         font-size: 40px !important;
+    }
+    .about-back-img-2{
+        min-height: 650px;
+    }
+    .margin-con{
+        margin-top: 12%;
     }
 
 }

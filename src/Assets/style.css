@@ -383,3 +383,195 @@
     width:600px;
 }
 
+/* about section */
+
+.about-back-img{
+    background-image: url('../images/featured-41-of-174.jpg');
+    min-height: 500px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about-back-img-2{
+    background-image: url('../images/about-us-2.jpg');
+    min-height: 630px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+    font-size: 40px !important;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(59, 50, 50);
+}
+.des{
+    font-size:15px !important;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(39, 33, 33);
+}
+
+/* contact section */
+.contact-us-img{
+    background-color: rgb(128, 153, 128);
+    min-height: 350px;
+}
+.margin-con{
+    margin-top: 11%;
+}
+
+/* helps more section */
+.help-more-img-1{
+    background-image: url('../images/call-service.jpg');
+    min-height: 400px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.helps-margin-top{
+  margin-top: 25%;
+}
+.nav-title-two{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.faq-title{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(78, 161, 30);
+}
+.faq-q-title{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(36, 49, 49);
+}
+.faq-ans-text{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: rgba(49, 49, 46, 0.897);
+}
+
+/* company info section */
+.help-more-img-2{
+    background-image: url('../images/company-info.jpg');
+    min-height: 400px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.com-name{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(36, 49, 49);
+}
+.com-des{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(66, 94, 94);
+}
+
+/* team section */
+.help-more-img-3{
+    background-image: url('https://th.bing.com/th/id/R.1d6e8504ab9dbd450dbe18a062e7cc4b?rik=jas2wEkizN0VZg&riu=http%3a%2f%2fwww.bumc.bu.edu%2fmicrobiology%2ffiles%2f2008%2f03%2flab-photo-09-7a-best.jpg&ehk=tcCheuar9yOQ%2b%2bKKifQ0oN7O0Mz2XrqH803e2vS1GEA%3d&risl=&pid=ImgRaw&r=0');
+    min-height: 400px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.team-img{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+.team-name{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(36, 49, 49);
+}
+.team-title{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(66, 94, 94);
+}
+.animation{
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.animation:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 3px 2px rgba(10, 132, 212, 0.6);
+}
+
+/* career section */
+.help-more-img-4{
+    background-image: url('../images/career.jpeg');
+    min-height: 400px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.help-more-img-5{
+    background-image: url('../images/joinTeamEn.webp');
+    min-height: 400px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.carrier-img{
+    width: 100%;
+}
+
+/* privacy policy section */
+.help-more-img-6{
+    background-image: url('../images/p.jpg');
+    min-height: 400px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.privacy-des{
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(66, 94, 94);
+}
+.privacy-sm-des{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(66, 94, 94);
+}
+.line{
+    line-height: 16px;
+}
+
+/* terms of use section */
+.help-more-img-7{
+    background-image: url('../images/T.jpg');
+    min-height: 400px;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

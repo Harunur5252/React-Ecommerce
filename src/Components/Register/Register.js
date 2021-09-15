@@ -15,6 +15,10 @@ export default class Register extends Component {
                         <Form.Control type="email" placeholder="enter email" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
+                        <Form.Label>Mobile Number</Form.Label>
+                        <Form.Control type="text" placeholder="enter mobile_no" />
+                    </Form.Group> 
+                    <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="enter password" />
                     </Form.Group>    
