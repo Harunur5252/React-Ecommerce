@@ -9,6 +9,7 @@ import Testimonial from '../Components/Testimonial/Testimonial';
 import Brands from '../Components/Brands/Brands';
 import Footer from '../Components/Footer/Footer';
 import Carousels from '../Components/Carousels/Carousels';
+import Giveaway from '../Components/Giveaway/Giveaway';
 
 export default class Home extends Component {
     componentDidMount(){
@@ -24,6 +25,7 @@ export default class Home extends Component {
                 <FeatureProduct />
                 <LatestProduct />
                 <Offer />
+                <Giveaway />
                 <Testimonial />
                 <Brands />
                 <Footer />

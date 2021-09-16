@@ -32,8 +32,8 @@ export default class Footer extends Component {
                             <h3>Useful Links</h3>
                             <ul className="list-item">
                                 <li><Link to='/cart' className="a">Coupons</Link></li>
-                                <li><Link to='/' className="a">Big Post</Link></li>
-                                <li><Link to='/' className="a">Return Policy</Link></li>
+                                <li><Link to='/big_post' className="a">Big Post</Link></li>
+                                <li><Link to='/return_policy' className="a">Return Policy</Link></li>
                                 <li><Link to='/' className="a">Join Affiliate</Link></li>
                             </ul>
                          </Col>

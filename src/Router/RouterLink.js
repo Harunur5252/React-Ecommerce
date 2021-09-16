@@ -17,6 +17,8 @@ import CheckOutPage from '../Page/CheckOutPage'
 import OrderPage from '../Page/OrderPage'
 import SareePages from '../Page/SubCategoryPages/Women\'s/SareePages'
 import T_ShirtsPage from '../Page/SubCategoryPages/Men\'s/T_ShirtsPages'
+import BigPostPages from '../Page/BigPostPages'
+import ReturnPolicyPages from '../Page/ReturnPolicyPages'
 
 export default class RouterLink extends Component {
     render() {
@@ -73,6 +75,12 @@ export default class RouterLink extends Component {
                     </Route>
                     <Route exact path="/t_shirt">
                          <T_ShirtsPage />  
+                    </Route>
+                    <Route exact path="/big_post">
+                         <BigPostPages />  
+                    </Route>
+                    <Route exact path="/return_policy">
+                         <ReturnPolicyPages />  
                     </Route>
                 </Switch>
             </Fragment>

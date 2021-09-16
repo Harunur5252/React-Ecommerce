@@ -185,6 +185,12 @@
     font-family: 'Montserrat', sans-serif;
     color: #563434 !important;
 }
+.offer-left{
+    font-size: 18px !important;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: #c01818 !important;
+}
 
 /* testimonial section */
 .testimonial{
@@ -731,4 +737,15 @@
  }
 
 
- 
+ /* GIVEAWAY section */
+ .give-margin-text{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 17%;
+}
+
+/* return policy section */
+.return_policy{
+    background-color: rgb(141, 51, 111);
+    min-height: 350px;
+}
