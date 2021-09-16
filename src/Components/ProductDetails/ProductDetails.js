@@ -61,7 +61,7 @@ export default class ProductDetails extends Component {
                                 <Row>
                                     <Col lg={5} md={5} sm={6} className="mt-3">
                                       <Form.Control type="number" defaultValue={1}/>
-                                      <Link to='/cart'><Button className="btn-3">Add To Cart</Button></Link>
+                                      <Link to='/cart' className="button">Add To Cart</Link>
                                     </Col>        
                                 </Row>
                                 <h3 className="product-d-title">PRODUCT DETAILS <FontAwesomeIcon icon={faListAlt} style={{color:'red'}}/></h3>

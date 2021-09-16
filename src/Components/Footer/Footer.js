@@ -31,20 +31,20 @@ export default class Footer extends Component {
                          <Col lg={3} md={6} sm={12} className="text-justify footer-column">
                             <h3>Useful Links</h3>
                             <ul className="list-item">
-                                <li><a href='/'>Coupons</a></li>
-                                <li><a href='/'>Big Post</a></li>
-                                <li><a href='/'>Return Policy</a></li>
-                                <li><a href='/'>Join Affiliate</a></li>
+                                <li><Link to='/cart' className="a">Coupons</Link></li>
+                                <li><Link to='/' className="a">Big Post</Link></li>
+                                <li><Link to='/' className="a">Return Policy</Link></li>
+                                <li><Link to='/' className="a">Join Affiliate</Link></li>
                             </ul>
                          </Col>
 
                          <Col lg={3} md={6} sm={12} className="text-justify footer-column">
                             <h3>Follow Us</h3>
                             <ul className="list-item">
-                                <li><a href='/'><FontAwesomeIcon icon={faFacebook}/>&nbsp;Facebook</a></li>
-                                <li><a href='/'><FontAwesomeIcon icon={faTwitter}/>&nbsp;Twitter</a></li>
-                                <li><a href='/'><FontAwesomeIcon icon={faInstagram}/>&nbsp;Instagram</a></li>
-                                <li><a href='/'><FontAwesomeIcon icon={faYoutube}/>&nbsp;Youtube</a></li>
+                                <li><a href='/' className="a"><FontAwesomeIcon icon={faFacebook}/>&nbsp;Facebook</a></li>
+                                <li><a href='/' className="a"><FontAwesomeIcon icon={faTwitter}/>&nbsp;Twitter</a></li>
+                                <li><a href='/' className="a"><FontAwesomeIcon icon={faInstagram}/>&nbsp;Instagram</a></li>
+                                <li><a href='/' className="a"><FontAwesomeIcon icon={faYoutube}/>&nbsp;Youtube</a></li>
                             </ul>
                          </Col>
                          <div className="hr"></div>

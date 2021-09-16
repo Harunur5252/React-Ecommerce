@@ -76,13 +76,27 @@
 }
 
 
+/* category section */
+.sub-category-title{
+    font-size: 17px !important;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(19, 14, 34) !important;
+}
+.sub-category-title:hover{
+    color: rgb(197, 27, 183) !important;
+}
+
+
+
+
 /* feature categories images */
 .center{
     text-align: center;
     margin-top: 13%;
 }
 .feature-img{
-    height: 230px;
+    height: 210px;
     width: 100%;
 }
 
@@ -248,7 +262,7 @@
 .list-item{
     list-style-type: none;
 }
-.list-item li a{
+.list-item li .a{
     text-decoration: none;
     color: #3a8379 !important;
     font-size: 15px;
@@ -256,7 +270,7 @@
     font-family: 'Raleway', sans-serif;
     transition: 0.5s;
 }
-.list-item li a:hover{
+.list-item li .a:hover{
     color: #ffd6d6 !important;
 }
 .dw-app{

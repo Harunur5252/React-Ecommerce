@@ -15,6 +15,8 @@ import PrivacyPage from '../Page/PrivacyPage'
 import TermsPage from '../Page/TermsPage'
 import CheckOutPage from '../Page/CheckOutPage'
 import OrderPage from '../Page/OrderPage'
+import SareePages from '../Page/SubCategoryPages/Women\'s/SareePages'
+import T_ShirtsPage from '../Page/SubCategoryPages/Men\'s/T_ShirtsPages'
 
 export default class RouterLink extends Component {
     render() {
@@ -65,6 +67,12 @@ export default class RouterLink extends Component {
                     </Route>
                     <Route exact path="/order">
                          <OrderPage />  
+                    </Route>
+                    <Route exact path="/saree">
+                         <SareePages />  
+                    </Route>
+                    <Route exact path="/t_shirt">
+                         <T_ShirtsPage />  
                     </Route>
                 </Switch>
             </Fragment>
