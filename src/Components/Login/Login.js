@@ -27,7 +27,7 @@ export default class Login extends Component {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="enter password" />
                     </Form.Group>    
-                    <Link to='#' className="btn">
+                    <Link to='#' className="button">
                         Login
                     </Link>
                     <p onClick={this.modalOpen} style={{cursor:'pointer'}}>Forgot Password?</p>
@@ -44,10 +44,10 @@ export default class Login extends Component {
                         </Form.Group> 
                     </Modal.Body>
                     <Modal.Footer>
-                    <a className="btn" onClick={this.modalClose}>
+                    <Link className="button" onClick={this.modalClose}>
                         Close
-                    </a>
-                    <Link to='#' className="btn m-2" onClick="">
+                    </Link>
+                    <Link to='#' className="button m-2" onClick="">
                         Reset
                     </Link>
                     </Modal.Footer>

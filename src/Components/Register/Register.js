@@ -22,7 +22,7 @@ export default class Register extends Component {
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="enter password" />
                     </Form.Group>    
-                    <Link to='#' className="btn">
+                    <Link to='#' className="button">
                         Register
                     </Link>
                 </Form>

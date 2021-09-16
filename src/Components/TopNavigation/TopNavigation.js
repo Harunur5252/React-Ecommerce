@@ -40,6 +40,8 @@ export default class TopNavigation extends Component {
                             <Nav.Link> <NavLink className="nav-title" exact to='/contact'>Contact</NavLink></Nav.Link>
                             <Nav.Link> <NavLink className="nav-title" exact to='/account'>Account</NavLink></Nav.Link>
                             <Nav.Link> <NavLink className="nav-title" exact to='/helps_more'>Helps & More</NavLink></Nav.Link>
+                            <Nav.Link> <NavLink className="nav-title" exact to='/checkout'>CheckOut</NavLink></Nav.Link>
+                            <Nav.Link> <NavLink className="nav-title" exact to='/order'>Order</NavLink></Nav.Link>
                         </Nav>
                         <HashRouter><NavLink exact to="/cart"><img src={cartImg} className="cart-img"/></NavLink></HashRouter>
                         </Navbar.Collapse>

@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Container,Row,Col,Card,Form,Button,FloatingLabel } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 export default class Contact extends Component {
     render() {
@@ -7,8 +8,8 @@ export default class Contact extends Component {
             <Fragment>
                 <Container fluid={true}>
                     <Row>
-                        <Col lg={12} md={12} sm={12} className="contact-us-img text-center">
-                           <h1 className="margin-con title">Contact Us</h1>
+                        <Col lg={12} md={12} sm={12} className="contact text-center">
+                           <h1 className="margin-con title text-white">Contact Us</h1>
                         </Col>
                     </Row>
                 </Container>
@@ -52,9 +53,9 @@ export default class Contact extends Component {
                                                 />
                                              </FloatingLabel>
                                           
-                                            <Button type="submit" className="btn">
+                                            <Link to='#' className="button">
                                                 Send Message
-                                            </Button>
+                                            </Link>
                                           </Form>
                                        </Col>
                                    </Row>

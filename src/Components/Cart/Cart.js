@@ -1,6 +1,6 @@
-import Button from '@restart/ui/esm/Button';
+
 import React, { Component, Fragment } from 'react'
-import { Col, Container, Row,Table,Form } from 'react-bootstrap'
+import { Col, Container, Row,Table,Form,Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import product_1 from '../../images/product-1.jpg'
 export default class Cart extends Component {
@@ -93,26 +93,29 @@ export default class Cart extends Component {
                                    
                                 </tbody>
                                 </Table>
-
                         </Col>
-                        <Col lg={12} sm={12} md={12}>
                         
+                        <Col lg={12} sm={12} md={12}>
                             <p className="hr-2"></p>
-                                <Table striped responsive>
-                                    <tr>
-                                        <th>Subtotal</th>
-                                        <th>Tax</th>
-                                        <th>Total</th>
-                                    </tr>
-                                    <tr>
-                                        <td>$1500.00</td>
-                                        <td>$100.00</td>
-                                        <td>$1600.00</td>
-                                    </tr>
-                                    
-                                </Table>
-                                <Button className="btn-2"><Link to='/account' className="text" style={{color:'#fff'}}>Proceed To Checkout &#x2192;</Link></Button>
-                                    
+                            <Row>
+                                <Col lg={5} sm={12} md={6} className="mb-3">
+                                   <Form.Control type="text" placeholder="have any coupon?" />
+                                   <Button variant="outline-success" className="mt-2">Add Coupon</Button>
+                                </Col>
+                            </Row>
+                            <Table striped responsive>
+                                <tr>
+                                    <th>Subtotal</th>
+                                    <th>Tax</th>
+                                    <th>Total</th>
+                                </tr>
+                                <tr>
+                                    <td>$1500.00</td>
+                                    <td>$100.00</td>
+                                    <td>$1600.00</td>
+                                </tr>
+                            </Table>
+                            <Link to='/account' className="button">Proceed To Checkout &#x2192;</Link>
                         </Col>
                     </Row>
                 </Container>
