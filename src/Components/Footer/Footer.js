@@ -41,10 +41,10 @@ export default class Footer extends Component {
                          <Col lg={3} md={6} sm={12} className="text-justify footer-column">
                             <h3>Follow Us</h3>
                             <ul className="list-item">
-                                <li><a href='/' className="a"><FontAwesomeIcon icon={faFacebook}/>&nbsp;Facebook</a></li>
-                                <li><a href='/' className="a"><FontAwesomeIcon icon={faTwitter}/>&nbsp;Twitter</a></li>
-                                <li><a href='/' className="a"><FontAwesomeIcon icon={faInstagram}/>&nbsp;Instagram</a></li>
-                                <li><a href='/' className="a"><FontAwesomeIcon icon={faYoutube}/>&nbsp;Youtube</a></li>
+                                <li><a href='https://www.facebook.com/'  target='_blank' className="a"><FontAwesomeIcon icon={faFacebook}/>&nbsp;Facebook</a></li>
+                                <li><a href='https://www.twitter.com/'   target='_blank' className="a"><FontAwesomeIcon icon={faTwitter}/>&nbsp;Twitter</a></li>
+                                <li><a href='https://www.instagram.com/' target='_blank' className="a"><FontAwesomeIcon icon={faInstagram}/>&nbsp;Instagram</a></li>
+                                <li><a href='https://www.youtube.com/'   target='_blank' className="a"><FontAwesomeIcon icon={faYoutube}/>&nbsp;Youtube</a></li>
                             </ul>
                          </Col>
                          <div className="hr"></div>

@@ -8,6 +8,7 @@ import Offer from '../Components/Offer/Offer';
 import Testimonial from '../Components/Testimonial/Testimonial';
 import Brands from '../Components/Brands/Brands';
 import Footer from '../Components/Footer/Footer';
+import Carousels from '../Components/Carousels/Carousels';
 
 export default class Home extends Component {
     componentDidMount(){
@@ -18,6 +19,7 @@ export default class Home extends Component {
             <Fragment>
                 <TopNavigation title="Home"/>
                 <Header />
+                 <Carousels />
                 <FeatureCategory />
                 <FeatureProduct />
                 <LatestProduct />

@@ -75,6 +75,12 @@
    background-color: #563434;
 }
 
+/* carousel slider section */
+.carousel-img{
+    height: 350px !important;
+    width: 100% !important;
+}
+
 
 /* category section */
 .sub-category-title{
@@ -723,3 +729,6 @@
 .btn-4:hover{
     background-color: #c92a0e !important;
  }
+
+
+ 
