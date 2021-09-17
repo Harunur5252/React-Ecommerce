@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import { Col, Container, Row,Card,Tabs,Tab } from 'react-bootstrap'
+import { Col, Container, Row,Card,Tabs,Tab,Button } from 'react-bootstrap'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook,faGoogle } from '@fortawesome/free-brands-svg-icons'
 import account_img from '../../images/R.png' 
 import Login from '../Login/Login'
 import Register from '../Register/Register'
@@ -18,6 +20,8 @@ export default class Account extends Component {
                            <div>
                                 <Card>
                                    <Card.Body>
+                                    <Button className="btn-3"><FontAwesomeIcon icon={faFacebook} style={{fontSize:'22px'}}/> &nbsp;Login With Facebook</Button>
+                                    <Button className="btn-4 m-2"><FontAwesomeIcon icon={faGoogle} style={{fontSize:'22px'}}/>&nbsp;Login With Google</Button>
                                     <Tabs defaultActiveKey="register"  transition={true} id="uncontrolled-tab-example" className="mb-3">
                                             <Tab eventKey="login" title="Login">
                                                 <Login />

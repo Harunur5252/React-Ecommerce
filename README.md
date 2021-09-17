@@ -16,6 +16,9 @@ This is a e-commerce project design(Responsive) is used react js.
 ### offer section
 ![offer!](/src/images/offer.PNG "offer")
 
+### new product low price section according a specific time
+![new product low price section!](/src/images/count-timer.PNG "new product low price section")
+
 ### testimonial section
 ![testimonial!](/src/images/testimonial.PNG "testimonial")
 
