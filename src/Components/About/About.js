@@ -1,8 +1,8 @@
-import React, { Component,Fragment } from 'react'
+import React, {Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
-export default class About extends Component {
-    render() {
+export default function About () {
+
         return (
             <Fragment>
                 <Container fluid={true}>
@@ -56,4 +56,4 @@ export default class About extends Component {
             </Fragment>
         )
     }
-}
+

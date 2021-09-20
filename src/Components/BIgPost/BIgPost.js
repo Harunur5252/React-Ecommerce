@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react'
-import { Container,Row,Col } from 'react-bootstrap'
+import React, { Fragment } from 'react'
+import { Container,Row,Col,Form } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
@@ -12,20 +12,29 @@ import big_post_img_2 from '../../images/category_images/adi1690715_1.jpg'
 import big_post_img_3 from '../../images/category_images/men-s-t-shirt-depeche-mode-delta-machine.jpg'
 import big_post_img_4 from '../../images/category_images/9c08acdb4c0670b54134bf090e5de0ce.jpg'
 
-export default class BigPost extends Component {
-    render() {
+export default function BigPost () {
+
         return (
             <Fragment>
                 <Container className="mb-5">
                     <h2 className="f-product-title">BigPost Products</h2>
                     <div className="underline"></div>
-                    <select className="form-control select-sort mt-5">
-                        <option value="">Default Shorting</option>
-                        <option value="">Short By Price</option>
-                        <option value="">Short By Popularity</option>
-                        <option value="">Short By Rating Star</option>
-                        <option value="">Short By Sale</option>
-                    </select>
+                    <Row className="mt-5">
+                       <Col lg={4} md={6} sm={12}>
+                          <select className="form-control select-sort">
+                              <option value="">Default Sorting</option>
+                              <option value="">Short By Price</option>
+                              <option value="">Short By Popularity</option>
+                              <option value="">Short By Rating Star</option>
+                              <option value="">Short By Sale</option>
+                           </select>
+                           
+                       </Col>
+
+                       <Col lg={4} md={6} sm={12}>
+                           <Form.Control type="text" placeholder="Search_Product" />
+                       </Col>
+                    </Row>
                     <Row>
                         <Col lg={3} md={6} sm={12}>
                            <div className="product mt-5">
@@ -175,4 +184,3 @@ export default class BigPost extends Component {
             </Fragment>
         )
     }
-}

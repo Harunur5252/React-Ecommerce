@@ -1,8 +1,10 @@
-import React, { Component, Fragment } from 'react'
-import { Col, Container, Row,Card,Form,Button } from 'react-bootstrap'
+import React, { Fragment } from 'react'
+import { Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-export default class Register extends Component {
-    render() {
+
+
+export default function Register () {
+
         return (
             <Fragment>
                 <Form>
@@ -29,4 +31,4 @@ export default class Register extends Component {
             </Fragment>
         )
     }
-}
+

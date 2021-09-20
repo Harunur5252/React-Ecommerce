@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Col, Container, Row,Nav,NavDropdown,Accordion } from 'react-bootstrap'
 import { Link, NavLink } from 'react-router-dom'
 import category_1 from '../../images/category-1.jpg'
@@ -6,8 +6,8 @@ import category_2 from '../../images/category-2.jpg'
 import category_3 from '../../images/category-3.jpg'
 import sub_category_img_12 from '../../images/category_images/adi2261383.jpg'
 
-export default class FeatureCategory extends Component {
-    render() {
+export default function FeatureCategory () {
+
         return (
             <Fragment>
                 <Container>
@@ -25,29 +25,29 @@ export default class FeatureCategory extends Component {
                                         <Accordion.Item eventKey="0">
                                             <Accordion.Header className="pay-text">Women's Fashion</Accordion.Header>
                                             <Accordion.Body>
-                                                <NavDropdown.Item href="#action/3.1"><NavLink to='/saree' className="sub-category-title text">Saree</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.2"><NavLink to='/' className="sub-category-title text">Shalwar Kameez</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Women's Dresses</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Kurtis</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Lingerie, Sleep &amp; Lounge</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Western &amp; Winter Clothing</NavLink></NavDropdown.Item>
-                                                 <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Girl's Fashion</NavLink></NavDropdown.Item>
-                                                 <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Women's Bag</NavLink></NavDropdown.Item>
-                                                 <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Shoes</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/saree' className="sub-category-title text">Saree</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Shalwar Kameez</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Women's Dresses</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Kurtis</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Lingerie, Sleep &amp; Lounge</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Western &amp; Winter Clothing</NavLink></NavDropdown.Item>
+                                                 <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Girl's Fashion</NavLink></NavDropdown.Item>
+                                                 <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Women's Bag</NavLink></NavDropdown.Item>
+                                                 <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Shoes</NavLink></NavDropdown.Item>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                         <Accordion.Item eventKey="1">
                                             <Accordion.Header className="pay-text">Men's Fashion</Accordion.Header>
                                             <Accordion.Body>
-                                            <NavDropdown.Item href="#action/3.1"><NavLink to='/t_shirt' className="sub-category-title text">T-Shirts</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.2"><NavLink to='/' className="sub-category-title text">Shirts</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Kurtas</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Jeans</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Pant</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Shoes</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Girl's Fashion</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Men's Bag</NavLink></NavDropdown.Item>
-                                                <NavDropdown.Item href="#action/3.3"><NavLink to='/' className="sub-category-title text">Clothing</NavLink></NavDropdown.Item>
+                                            <NavDropdown.Item ><NavLink to='/t_shirt' className="sub-category-title text">T-Shirts</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Shirts</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Kurtas</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Jeans</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Pant</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Shoes</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Girl's Fashion</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Men's Bag</NavLink></NavDropdown.Item>
+                                                <NavDropdown.Item ><NavLink to='/' className="sub-category-title text">Clothing</NavLink></NavDropdown.Item>
                                             </Accordion.Body>
                                         </Accordion.Item>
                                     </Accordion>
@@ -85,4 +85,4 @@ export default class FeatureCategory extends Component {
             </Fragment>
         )
     }
-}
+

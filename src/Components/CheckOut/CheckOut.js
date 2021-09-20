@@ -1,13 +1,11 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Col, Container, Row,Card,Form,FloatingLabel,Button } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapMarkerAlt,faClock,faDollarSign } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
-export default class CheckOut extends Component {
-    componentDidMount(){
-        window.scroll(0,0);
-     }
-    render() {
+
+export default function CheckOut () {
+    
         return (
             <Fragment>
                 <Container  fluid={true}>
@@ -89,4 +87,4 @@ export default class CheckOut extends Component {
             </Fragment>
         )
     }
-}
+

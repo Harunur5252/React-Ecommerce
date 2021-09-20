@@ -1,10 +1,11 @@
 
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Col, Container, Row,Table,Form,Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import product_1 from '../../images/product-1.jpg'
-export default class Cart extends Component {
-    render() {
+
+export default function Cart () {
+
         return (
             <Fragment>
                 <Container className="mt-5 mb-5">
@@ -13,12 +14,13 @@ export default class Cart extends Component {
                             <Table striped bordered >
                                 <thead style={{background:'#ff523b',color:'white'}}>
                                     <tr>
-                                        <td width="50%">Product</td>
-                                        <td width="30%">Quantity</td>
-                                        <td width="20%">SubTotal</td>
+                                        <th width="50%">Product</th>
+                                        <th width="30%">Quantity</th>
+                                        <th width="20%">SubTotal</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr>
                                    <td>
                                       <Row>
                                           <Col lg={1} md={12} sm={12}>
@@ -30,7 +32,7 @@ export default class Cart extends Component {
                                           </Col>
                                       </Row>
 
-                                      <Row>
+                                      <Row className="mt-4">
                                           <Col lg={1} md={12} sm={12}>
                                               <img src={product_1} className="cart-img-product"/>
                                           </Col>
@@ -40,7 +42,7 @@ export default class Cart extends Component {
                                           </Col>
                                       </Row>
 
-                                      <Row>
+                                      <Row className="mt-4">
                                           <Col lg={1} md={12} sm={12}>
                                               <img src={product_1} className="cart-img-product"/>
                                           </Col>
@@ -58,13 +60,13 @@ export default class Cart extends Component {
                                         </Col>
                                       </Row>
 
-                                      <Row>
+                                      <Row className="mt-4">
                                         <Col lg={5} md={12} sm={12} className="cart-quantity">
                                            <Form.Control type="number" defaultValue={1} />
                                         </Col>
                                       </Row>
 
-                                      <Row>
+                                      <Row className="mt-4">
                                         <Col lg={5} md={12} sm={12} className="cart-quantity">
                                            <Form.Control type="number" defaultValue={1} />
                                         </Col>
@@ -78,19 +80,19 @@ export default class Cart extends Component {
                                         </Col>
                                       </Row>
 
-                                      <Row>
+                                      <Row className="mt-4">
                                         <Col lg={5} md={12} sm={12} className="cart-price-size cart-price">
                                            <p>$500.00</p>
                                         </Col>
                                       </Row>
 
-                                      <Row>
+                                      <Row className="mt-4">
                                         <Col lg={5} md={12} sm={12} className="cart-price-size cart-price">
                                            <p>$500.00</p>
                                         </Col>
                                       </Row>
                                    </td>
-                                   
+                                   </tr>
                                 </tbody>
                                 </Table>
                         </Col>
@@ -104,16 +106,21 @@ export default class Cart extends Component {
                                 </Col>
                             </Row>
                             <Table striped responsive>
+                                <thead>
                                 <tr>
                                     <th>Subtotal</th>
                                     <th>Tax</th>
                                     <th>Total</th>
                                 </tr>
-                                <tr>
-                                    <td>$1500.00</td>
-                                    <td>$100.00</td>
-                                    <td>$1600.00</td>
-                                </tr>
+                                </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>$1500.00</td>
+                                        <td>$100.00</td>
+                                        <td>$1600.00</td>
+                                        </tr>
+                                    </tbody>
+                                
                             </Table>
                             <Link to='/account' className="button">Proceed To Checkout &#x2192;</Link>
                         </Col>
@@ -122,4 +129,4 @@ export default class Cart extends Component {
             </Fragment>
         )
     }
-}
+

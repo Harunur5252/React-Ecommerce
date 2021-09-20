@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react'
-import { Container, Row,Col,Navbar,Nav } from 'react-bootstrap'
-import { BrowserRouter, HashRouter, Link, NavLink } from 'react-router-dom'
+import React, { Fragment } from 'react'
+import { Container,Navbar,Nav } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
 
-export default class NavigationTwo extends Component {
-    render() {
+export default function NavigationTwo () {
+ 
         return (
             <Fragment>
                 <Navbar bg="dark" variant="dark" expand="lg">
@@ -12,12 +12,12 @@ export default class NavigationTwo extends Component {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="m-auto">
-                        <Nav.Link><NavLink exact to='/helps_more' activeStyle={{color:'pink'}} className="nav-title-two">FAQ</NavLink></Nav.Link>
-                        <Nav.Link><NavLink exact to='/company_info' activeStyle={{color:'pink'}} className="nav-title-two">Company Info</NavLink></Nav.Link>
-                        <Nav.Link><NavLink exact to='/team' activeStyle={{color:'pink'}} className="nav-title-two">Team</NavLink></Nav.Link>
-                        <Nav.Link><NavLink exact to='/career' activeStyle={{color:'pink'}} className="nav-title-two">Career</NavLink></Nav.Link>
-                        <Nav.Link><NavLink exact to='/privacy' activeStyle={{color:'pink'}} className="nav-title-two">Privacy Policy</NavLink></Nav.Link>
-                        <Nav.Link><NavLink exact to='/terms' activeStyle={{color:'pink'}} className="nav-title-two">Terms of Use</NavLink></Nav.Link>
+                        <Nav.Link as={NavLink} exact to='/helps_more' activeStyle={{color:'pink'}} className="nav-title-two">FAQ</Nav.Link>
+                        <Nav.Link as={NavLink} exact to='/company_info' activeStyle={{color:'pink'}} className="nav-title-two">Company Info</Nav.Link>
+                        <Nav.Link as={NavLink} exact to='/team' activeStyle={{color:'pink'}} className="nav-title-two">Team</Nav.Link>
+                        <Nav.Link as={NavLink} exact to='/career' activeStyle={{color:'pink'}} className="nav-title-two">Career</Nav.Link>
+                        <Nav.Link as={NavLink} exact to='/privacy' activeStyle={{color:'pink'}} className="nav-title-two">Privacy Policy</Nav.Link>
+                        <Nav.Link as={NavLink} exact to='/terms' activeStyle={{color:'pink'}} className="nav-title-two">Terms of Use</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -25,4 +25,4 @@ export default class NavigationTwo extends Component {
             </Fragment>
         )
     }
-}
+

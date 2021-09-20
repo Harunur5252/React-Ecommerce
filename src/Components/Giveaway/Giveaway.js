@@ -1,12 +1,12 @@
-import React, { Component,Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import Timer from 'react-compound-timer'
 import { Link } from 'react-router-dom'
 import exclusive_img from '../../images/exclusive.png'
 
 
-export default class Giveaway extends Component {
-    render() {
+export default function Giveaway () {
+
         return (
             <Fragment>
                 <Container className="mt-5 mb-5 offer">
@@ -39,7 +39,7 @@ export default class Giveaway extends Component {
                               <p className="text-justify offer-text">Exclusively Available on RedStore</p>
                               <h1 className="offer-title">Smart Band 5</h1>
                               <small className="offer-text">The Mi Smart Band 5 feature a 39.9% larger (than Mi Band 3) AMOLED color full-touch display with adjustable brightness, so everything is clear as can be.</small><br/>
-                              <Link href="#" className="button">Buy Now &#8594;</Link>
+                              <Link to="/cart" className="button">Buy Now &#8594;</Link>
                            </div>
                            
                        </Col>
@@ -48,4 +48,4 @@ export default class Giveaway extends Component {
             </Fragment>
         )
     }
-}
+

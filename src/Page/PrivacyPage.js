@@ -1,13 +1,16 @@
-import React, { Component, Fragment } from 'react'
+import React, { useState, useEffect,Fragment } from 'react'
 import Footer from '../Components/Footer/Footer'
 import TopNavigation from '../Components/TopNavigation/TopNavigation'
 import Privacy from '../Components/Privacy/Privacy';
 
-export default class PrivacyPage extends Component {
-    componentDidMount(){
-        window.scroll(0,0);
-     }
-    render() {
+export default function PrivacyPage () {
+    
+    const [count] = useState(window.scroll(0,0));
+
+    useEffect(() => {
+       const windowScroll = {count}
+    });
+
         return (
             <Fragment>
                 <TopNavigation title="Privacy & Policy"/>
@@ -16,4 +19,4 @@ export default class PrivacyPage extends Component {
             </Fragment>
         )
     }
-}
+

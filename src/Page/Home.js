@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { useState,useEffect, Fragment } from 'react'
 import TopNavigation from '../Components/TopNavigation/TopNavigation';
 import Header from '../Components/Header/Header';
 import FeatureCategory from '../Components/FeatureCategory/FeatureCategory';
@@ -11,11 +11,13 @@ import Footer from '../Components/Footer/Footer';
 import Carousels from '../Components/Carousels/Carousels';
 import Giveaway from '../Components/Giveaway/Giveaway';
 
-export default class Home extends Component {
-    componentDidMount(){
-        window.scroll(0,0);
-     }
-    render() {
+export default function Home () {
+    const [count] = useState(window.scroll(0,0));
+
+    useEffect(() => {
+       const windowScroll = {count}
+    });
+
         return (
             <Fragment>
                 <TopNavigation title="Home"/>
@@ -32,4 +34,4 @@ export default class Home extends Component {
             </Fragment>
         )
     }
-}
+

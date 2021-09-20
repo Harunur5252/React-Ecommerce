@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import NavigationTwo from '../NavigationTwo/NavigationTwo'
 
 
-export default class Terms extends Component {
-    render() {
+export default function Terms () {
+
         return (
             <Fragment>
                 <Container fluid={true}>
@@ -96,4 +96,4 @@ export default class Terms extends Component {
             </Fragment>
         )
     }
-}
+

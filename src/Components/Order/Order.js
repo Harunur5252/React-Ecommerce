@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Col, Container, Row,Form,Button,InputGroup,FormControl,FloatingLabel } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,8 +10,8 @@ import rocket from '../../images/rocket.png'
 import nogod from '../../images/Nagad-Logo.wine.png'
 import upai from '../../images/upai-2.png'
 
-export default class Order extends Component {
-    render() {
+export default function Order () {
+
         return (
             <Fragment>
                 <Container fluid={true}>
@@ -230,6 +230,6 @@ export default class Order extends Component {
             </Fragment>
         )
     }
-}
+
 
 

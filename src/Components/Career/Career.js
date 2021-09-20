@@ -2,8 +2,8 @@ import React, { Component, Fragment } from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import NavigationTwo from '../NavigationTwo/NavigationTwo'
 
-export default class Career extends Component {
-    render() {
+export default function Career () {
+
         return (
             <Fragment>
                 <Container fluid={true}>
@@ -60,7 +60,7 @@ export default class Career extends Component {
                             <div>
                                 <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/Sinthia.jpg?q=best&webp=1" />
                             </div>
-                            <p className="text-justify com-des">Chaldal promotes female empowerment. They have provided a respectful environment for all female employees.</p>
+                            <p className="text-justify com-des mt-2">Chaldal promotes female empowerment. They have provided a respectful environment for all female employees.</p>
                             <b>Sinthia</b><br/>
                             <b>Product Associate</b>
                         </Col>
@@ -69,7 +69,7 @@ export default class Career extends Component {
                             <div>
                                 <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/Raisul.png?q=best&webp=1" />
                             </div>
-                            <p className="text-justify com-des">My profession is my passion and I LOVE my profession. Chaldal has given me the opportunity to build my dream career, which will help me to be successful in life</p>
+                            <p className="text-justify com-des mt-2">My profession is my passion and I LOVE my profession. Chaldal has given me the opportunity to build my dream career, which will help me to be successful in life</p>
                             <b>Raisul</b><br/>
                             <b>Picking</b>
                         </Col>
@@ -78,7 +78,7 @@ export default class Career extends Component {
                             <div>
                                 <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/Faria.jpg?q=best&webp=1" />
                             </div>
-                            <p className="text-justify com-des">We support our Shoppers and Customers round the clock until every issue and support call is resolved up until the last order is delivered.</p>
+                            <p className="text-justify com-des mt-2">We support our Shoppers and Customers round the clock until every issue and support call is resolved up until the last order is delivered.</p>
                             <b>Faria</b><br/>
                             <b>Deputy Director</b>
                         </Col>
@@ -130,4 +130,4 @@ export default class Career extends Component {
             </Fragment>
         )
     }
-}
+

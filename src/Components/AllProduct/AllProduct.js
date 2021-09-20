@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from 'react'
-import { Container,Row,Col } from 'react-bootstrap'
+import React, { Fragment } from 'react'
+import { Container,Row,Col,Form } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 import { makeStyles } from '@material-ui/core/styles';
@@ -51,6 +51,7 @@ import sub_category_img_29 from '../../images/category_images/adi2710919.jpg'
 import sub_category_img_30 from '../../images/category_images/adi1690789.jpg'
 import sub_category_img_31 from '../../images/category_images/adi1690715_1.jpg'
 import sub_category_img_32 from '../../images/category_images/OIP (2).jpg'
+import Button from '@restart/ui/esm/Button';
 
 const useStyles = makeStyles((theme) => ({
    root: {
@@ -67,13 +68,23 @@ export default function AllProduct() {
             <Fragment>
                 <Container className="mb-5">
                     <h2 className="product-title">All Products</h2>
-                    <select className="form-control select-sort">
-                        <option value="">Default Shorting</option>
-                        <option value="">Short By Price</option>
-                        <option value="">Short By Popularity</option>
-                        <option value="">Short By Rating Star</option>
-                        <option value="">Short By Sale</option>
-                    </select>
+                    <Row className="mt-3">
+                       <Col lg={4} md={6} sm={12}>
+                          <select className="form-control select-sort">
+                              <option value="">Default Sorting</option>
+                              <option value="">Short By Price</option>
+                              <option value="">Short By Popularity</option>
+                              <option value="">Short By Rating Star</option>
+                              <option value="">Short By Sale</option>
+                           </select>
+                           
+                       </Col>
+
+                       <Col lg={4} md={6} sm={12}>
+                           <Form.Control type="text" placeholder="Search_Product" />
+                       </Col>
+                    </Row>
+
                     <Row>
                         <Col lg={3} md={6} sm={12}>
                               <div className="product mt-5">

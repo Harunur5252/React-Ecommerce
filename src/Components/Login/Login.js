@@ -1,21 +1,22 @@
-import React, { Component, Fragment } from 'react'
-import { Modal,Form,Button } from 'react-bootstrap'
+import React, { Fragment,useState } from 'react'
+import { Modal,Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-export default class Login extends Component {
-    state={
-        show:false
-    }
-    modalOpen=()=>{
-        this.setState({
-            show:true
+
+
+export default function Login () {
+   const [show,setShow] = useState({modal:false})
+
+   const modalOpen=()=>{
+        setShow({
+            modal:true
         })
     }
-    modalClose=()=>{
-        this.setState({
-            show:false
+    const modalClose=()=>{
+        setShow({
+            modal:false
         })
     }
-    render() {
+
         return (
             <Fragment>
                 <Form>
@@ -30,10 +31,10 @@ export default class Login extends Component {
                     <Link to='#' className="button">
                         Login
                     </Link>
-                    <p onClick={this.modalOpen} style={{cursor:'pointer'}}>Forgot Password?</p>
+                    <a className="text m-2" onClick={modalOpen} style={{cursor:'pointer'}}>Forgot Password?</a>
                 </Form>
 
-                <Modal show={this.state.show} onHide={this.modalClose}>
+                <Modal show={show.modal} onHide={modalClose}>
                     <Modal.Header closeButton>
                     <Modal.Title>Forget Password</Modal.Title>
                     </Modal.Header>
@@ -44,15 +45,15 @@ export default class Login extends Component {
                         </Form.Group> 
                     </Modal.Body>
                     <Modal.Footer>
-                    <Link className="button" onClick={this.modalClose}>
+                    <a className="button" onClick={modalClose}>
                         Close
-                    </Link>
-                    <Link to='#' className="button m-2" onClick="">
+                    </a>
+                    <a to='#' className="button m-2" onClick="">
                         Reset
-                    </Link>
+                    </a>
                     </Modal.Footer>
                 </Modal>
             </Fragment>
         )
     }
-}
+

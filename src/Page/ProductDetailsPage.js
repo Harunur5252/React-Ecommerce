@@ -1,13 +1,16 @@
-import React, { Component, Fragment } from 'react'
+import React, { useState,useEffect, Fragment } from 'react'
 import Footer from '../Components/Footer/Footer'
 import ProductDetails from '../Components/ProductDetails/ProductDetails'
 import TopNavigation from '../Components/TopNavigation/TopNavigation'
 
-export default class ProductDetailsPage extends Component {
-    componentDidMount(){
-        window.scroll(0,0);
-     }
-    render() {
+export default function ProductDetailsPage () {
+    
+    const [count] = useState(window.scroll(0,0));
+
+    useEffect(() => {
+       const windowScroll = {count}
+    });
+
         return (
             <Fragment>
                 <TopNavigation title="Product-Details"/>
@@ -16,4 +19,4 @@ export default class ProductDetailsPage extends Component {
             </Fragment>
         )
     }
-}
+

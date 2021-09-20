@@ -1,10 +1,10 @@
 
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Container, Row,Col,Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import headerImg from '../../images/banner-e-commerce11.png'
-export default class Header extends Component {
-    render() {
+
+export default function Header () {
       
         return (
             <Fragment>
@@ -28,4 +28,4 @@ export default class Header extends Component {
             </Fragment>
         )
     }
-}
+

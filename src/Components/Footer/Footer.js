@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { faFacebook,faYoutube,faTwitter,faInstagram } from '@fortawesome/free-brands-svg-icons'
 import  {faEnvelope,faPhone} from "@fortawesome/free-solid-svg-icons";
@@ -8,8 +8,8 @@ import app from '../../images/logo-white.png'
 import play from '../../images/play-store.png'
 import store from '../../images/app-store.png'
 
-export default class Footer extends Component {
-    render() {
+export default function Footer () {
+
         return (
             <Fragment>
                  <Container fluid={true} className="footer">
@@ -18,8 +18,8 @@ export default class Footer extends Component {
                             <h3>Download Our App</h3>
                             <p>Download app for Android and Ios phone</p>
                             <div className="">
-                                <img src={play} className="dw-app"/>
-                                <img src={store} className="dw-app"/>
+                                <Link to='#'><img src={play}  className="dw-app"/></Link>
+                                <Link to='#'><img src={store} className="dw-app"/></Link>
                             </div>
                          </Col>
 
@@ -34,7 +34,7 @@ export default class Footer extends Component {
                                 <li><Link to='/cart' className="a">Coupons</Link></li>
                                 <li><Link to='/big_post' className="a">Big Post</Link></li>
                                 <li><Link to='/return_policy' className="a">Return Policy</Link></li>
-                                <li><Link to='/' className="a">Join Affiliate</Link></li>
+                                <li><Link to='#' className="a">Join Affiliate</Link></li>
                             </ul>
                          </Col>
 
@@ -55,4 +55,4 @@ export default class Footer extends Component {
             </Fragment>
         )
     }
-}
+

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import {Route, Switch } from 'react-router-dom'
 import AboutPage from '../Page/AboutPage'
 import AccountPage from '../Page/AccountPage'
@@ -20,8 +20,8 @@ import T_ShirtsPage from '../Page/SubCategoryPages/Men\'s/T_ShirtsPages'
 import BigPostPages from '../Page/BigPostPages'
 import ReturnPolicyPages from '../Page/ReturnPolicyPages'
 
-export default class RouterLink extends Component {
-    render() {
+export default function RouterLink () {
+
         return (
             <Fragment>
                 <Switch>
@@ -86,4 +86,4 @@ export default class RouterLink extends Component {
             </Fragment>
         )
     }
-}
+

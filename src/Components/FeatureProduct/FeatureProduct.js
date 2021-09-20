@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Row,Col, Container } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
@@ -9,8 +9,8 @@ import product_4 from '../../images/product-4.jpg'
 import { Link } from 'react-router-dom'
 
 
-export default class FeatureProduct extends Component {
-    render() {
+export default function FeatureProduct () {
+
         return (
             <Fragment>
                 <Container className="mb-5">
@@ -89,4 +89,3 @@ export default class FeatureProduct extends Component {
             </Fragment>
         )
     }
-}

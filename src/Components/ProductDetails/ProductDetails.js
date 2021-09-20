@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Col, Container, Row ,Form,Button } from 'react-bootstrap'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
@@ -15,8 +15,7 @@ import product_11 from '../../images/product-11.jpg'
 import product_12 from '../../images/product-12.jpg'
 
 
-export default class ProductDetails extends Component {
-    render() {
+export default function ProductDetails () {
         return (
             <Fragment>
                 <Container className="mt-5 mb-5">
@@ -140,4 +139,4 @@ export default class ProductDetails extends Component {
             </Fragment>
         )
     }
-}
+

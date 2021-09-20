@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Container, Row,Col } from 'react-bootstrap'
 import NavigationTwo from '../NavigationTwo/NavigationTwo'
 
-export default class HelpsMore extends Component {
-    render() {
+export default function HelpsMore () {
+
         return (
             <Fragment>
                 <Container fluid={true}>
@@ -68,4 +68,4 @@ export default class HelpsMore extends Component {
             </Fragment>
         )
     }
-}
+

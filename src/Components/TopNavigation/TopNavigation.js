@@ -1,35 +1,35 @@
 import React, { Component } from 'react'
+import  { useState } from 'react'
 import { Fragment } from 'react'
-import { Container,Navbar,Nav,Modal,Form } from 'react-bootstrap'
+import { Container,Navbar,Modal,Form,Nav } from 'react-bootstrap'
+// import Nav from 'react-bootstrap/Nav'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import redStore from '../../images/logo.png'
 import cartImg from '../../images/cart.png'
 import { HashRouter, Link, NavLink } from 'react-router-dom'
+import '../../Assets/style.css'
+import '../../Assets/responsive.css'
 
+export default function TopNavigation(props)  {
+      const {title} = props
+      const [show, setShow] = useState({modal:false})
 
-export default class TopNavigation extends Component {
-    constructor(props){
-        super();
-        this.state={
-            title:props.title,
-            show:false
+        const modalOpen=()=>{
+            setShow({
+                modal:true
+            })
         }
-    }
-    modalOpen=()=>{
-      this.setState({
-          show:true
-      })
-    }
-    modalClose=()=>{
-        this.setState({
-            show:false
-        })
-      }
-    render() {
+
+        const modalClose=()=>{
+            setShow({
+                modal:false
+            })
+        }
+
         return (
             <Fragment>
-                 <title>{this.state.title}</title>
+                 <title>{title}</title>
                <Navbar bg="success" variant="dark" expand="lg" sticky="top">
                     <Container fluid>
                        
@@ -47,25 +47,25 @@ export default class TopNavigation extends Component {
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
-                            <Nav.Link> <NavLink className="nav-title" exact to='/'>Home</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/products'>Products</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/about'>About</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/contact'>Contact</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/account'>Account</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/helps_more'>Helps & More</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/checkout'>CheckOut</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" exact to='/order'>Order</NavLink></Nav.Link>
-                            <Nav.Link> <NavLink className="nav-title" onClick={this.modalOpen} to='#'><FontAwesomeIcon icon={faSearch}/> Search</NavLink></Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='/'>Home</Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='/products'> Products</Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='/About'> About</Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='/contact'> contact</Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='/account'> Account</Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='/helps_more'>Helps & More</Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='/checkout'> CheckOut</Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='/order'> Order</Nav.Link>
+                            <Nav.Link as={NavLink} className="nav-title" exact to='#' onClick={modalOpen}><FontAwesomeIcon icon={faSearch}/> Search</Nav.Link>
                         </Nav>
                         <HashRouter><NavLink exact to="/cart"><img src={cartImg} className="cart-img"/></NavLink></HashRouter>
                         </Navbar.Collapse>
 
                             <Modal
-                                show={this.state.show}
+                                show={show.modal}
                                 size="md"
                                 aria-labelledby="contained-modal-title-vcenter"
                                 centered
-                                onHide={this.modalClose}
+                                onHide={modalClose}
                                 >
                                 <Modal.Header closeButton>
                                     <Modal.Title id="contained-modal-title-vcenter">
@@ -85,7 +85,7 @@ export default class TopNavigation extends Component {
                                     </Form>
                                 </Modal.Body>
                                 <Modal.Footer>
-                                    <Link to='#' className="btn-4 text m-2" onClick={this.modalClose}>Close</Link>
+                                    <Link to='#' className="btn-4 text m-2" onClick={modalClose}>Close</Link>
                                 </Modal.Footer>
                             </Modal>
 
@@ -94,4 +94,4 @@ export default class TopNavigation extends Component {
             </Fragment>
         )
     }
-}
+

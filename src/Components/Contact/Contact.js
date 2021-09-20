@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { Container,Row,Col,Card,Form,Button,FloatingLabel } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
-export default class Contact extends Component {
-    render() {
+export default function Contact () {
+
         return (
             <Fragment>
                 <Container fluid={true}>
@@ -67,4 +67,4 @@ export default class Contact extends Component {
             </Fragment>
         )
     }
-}
+

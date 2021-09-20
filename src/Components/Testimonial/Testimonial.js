@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faStarHalfAlt,faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 import { Row,Col, Container } from 'react-bootstrap'
@@ -7,8 +7,8 @@ import user_2 from '../../images/user-2.png'
 import user_3 from '../../images/user-3.png'
 import user_4 from '../../images/user-4.jpg'
 
-export default class Testimonial extends Component {
-    render() {
+export default function Testimonial () {
+
         return (
             <Fragment>
                 <Container className="text-center mb-5">
@@ -90,4 +90,4 @@ export default class Testimonial extends Component {
             </Fragment>
         )
     }
-}
+

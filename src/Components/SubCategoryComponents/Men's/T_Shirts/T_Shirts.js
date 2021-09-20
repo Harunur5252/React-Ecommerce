@@ -1,5 +1,5 @@
 import React, {Fragment } from 'react'
-import { Row,Col, Container } from 'react-bootstrap'
+import { Row,Col, Container,Form } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
@@ -40,13 +40,22 @@ export default function T_Shirts() {
                     <h2 className="f-product-title">Bangladeshi T_Shirts Collection {year}</h2>
                     <div className="underline"></div>
                     <h2 className="product-title">All T_Shirt</h2>
-                    <select className="form-control select-sort">
-                        <option value="">Default Shorting</option>
-                        <option value="">Short By Price</option>
-                        <option value="">Short By Popularity</option>
-                        <option value="">Short By Rating Star</option>
-                        <option value="">Short By Sale</option>
-                    </select>
+                    <Row className="mt-3">
+                       <Col lg={4} md={6} sm={12}>
+                          <select className="form-control select-sort">
+                              <option value="">Default Sorting</option>
+                              <option value="">Short By Price</option>
+                              <option value="">Short By Popularity</option>
+                              <option value="">Short By Rating Star</option>
+                              <option value="">Short By Sale</option>
+                           </select>
+                           
+                       </Col>
+
+                       <Col lg={4} md={6} sm={12}>
+                           <Form.Control type="text" placeholder="Search_T_Shirt" />
+                       </Col>
+                    </Row>
                     <Row>
                     <Col lg={3} md={6} sm={12}>
                            <div className="product mt-5">
