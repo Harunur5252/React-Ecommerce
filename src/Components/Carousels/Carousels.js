@@ -1,9 +1,29 @@
 import React, { Fragment } from 'react'
 import { Col, Container, Row,Carousel } from 'react-bootstrap'
-import slider_1 from '../../images/carousel_img/banner-ecommerce-1024x281.jpg'
-import slider_2 from '../../images/carousel_img/OIP.jpg'
-import slider_3 from '../../images/carousel_img/96824-big.jpg'
-import slider_4 from '../../images/carousel_img/Binimal-Shopify-Top-Theme.png'
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import slider_1 from '../../images/carousel_img/istockphoto-1224339637-1024x1024.jpg'
+import slider_2 from '../../images/carousel_img/istockphoto-1224339512-1024x1024.jpg'
+import slider_3 from '../../images/carousel_img/istockphoto-902819636-1024x1024.jpg'
+import slider_4 from '../../images/carousel_img/istockphoto-1067359372-1024x1024.jpg'
+import slider_5 from '../../images/carousel_img/istockphoto-1157335319-1024x1024.jpg'
+import slider_6 from '../../images/carousel_img/istockphoto-1224339625-1024x1024.jpg'
+import slider_7 from '../../images/carousel_img/istockphoto-1049132190-1024x1024.jpg'
+
+const settings = {
+    dots: true,
+    autoplay:true,
+    autoplaySpeed:true,
+    fade: true,
+    infinite: true,
+    focusOnSelect:true,
+    touchMove:true,
+    draggable:true,
+    speed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+};
 
 export default function Carousels () {
 
@@ -12,40 +32,35 @@ export default function Carousels () {
                 <Container fluid={true} className="mt-5 mb-5">
                     <Row>
                         <Col lg={12} md={12} sm={12}>
-                        <Carousel>
-                            <Carousel.Item interval={2000}>
-                                <img
-                                    className="carousel-img rounded"
-                                    src={slider_1}
-                                    alt="First slide"
-                                />
-                            </Carousel.Item>
+                            <Slider {...settings}>
+                                <div className=" rounded">
+                                    <img src={slider_1} />
+                                </div>
 
-                            <Carousel.Item interval={2000}>
-                                <img
-                                    className="carousel-img rounded"
-                                    src={slider_2}
-                                    alt="Second slide"
-                                />
-                            </Carousel.Item>
+                                <div className="carousel-img rounded">
+                                    <img src={slider_2} />
+                                </div>
 
-                            <Carousel.Item interval={2000}>
-                                <img
-                                    className="carousel-img rounded"
-                                    src={slider_3}
-                                    alt="Third slide"
-                                />
-                            </Carousel.Item>
+                                <div className="carousel-img rounded">
+                                    <img src={slider_3} />
+                                </div>
 
-                            <Carousel.Item interval={2000}>
-                                <img
-                                    className="carousel-img rounded"
-                                    src={slider_4}
-                                    alt="Third slide"
-                                />
-                            </Carousel.Item>
+                                <div className="carousel-img rounded">
+                                    <img src={slider_4} />
+                                </div>
 
-                            </Carousel>
+                                <div className="carousel-img rounded">
+                                    <img src={slider_5} />
+                                </div>
+
+                                <div className="carousel-img rounded">
+                                    <img src={slider_6} />
+                                </div>
+
+                                <div className="carousel-img rounded">
+                                    <img src={slider_7} />
+                                </div>
+                            </Slider>
                         </Col>
                     </Row>
                 </Container>
