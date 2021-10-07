@@ -10,6 +10,7 @@ import Brands from '../Components/Brands/Brands';
 import Footer from '../Components/Footer/Footer';
 import Carousels from '../Components/Carousels/Carousels';
 import Giveaway from '../Components/Giveaway/Giveaway';
+import NewsLatter from '../Components/NewsLatter/NewsLatter';
 
 export default function Home () {
     const [count] = useState(window.scroll(0,0));
@@ -30,6 +31,7 @@ export default function Home () {
                 <Giveaway />
                 <Testimonial />
                 <Brands />
+                <NewsLatter />
                 <Footer />
             </Fragment>
         )

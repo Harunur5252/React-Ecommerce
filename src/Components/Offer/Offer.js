@@ -6,7 +6,7 @@ import exclusive_img from '../../images/exclusive.png'
 export default function Offer () {
         return (
             <Fragment>
-                <Container fluid className="offer mb-5">
+                <Container  className="offer mb-5">
                     <Row>
                         <Col lg={6} md={6} sm={12} className="mt-2">
                            <div className="offer-margin">

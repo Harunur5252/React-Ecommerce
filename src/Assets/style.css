@@ -787,3 +787,29 @@
     background-color: rgb(141, 51, 111);
     min-height: 350px;
 }
+
+/* newsletter section  */
+
+.nesLatterColor{
+    background: radial-gradient(rgb(230, 217, 217),#e69898);
+    min-height: 400px;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 1px solid red;
+}
+.news-title-margin-top{
+    margin-top: 9%;
+}
+.news-title{
+    color: rgb(48, 45, 45) !important;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.news-des{
+    color: rgb(85, 68, 68) !important;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
