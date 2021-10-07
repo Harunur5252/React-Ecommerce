@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import  { useState } from 'react'
 import { Fragment } from 'react'
 import { Container,Navbar,Modal,Form,Nav } from 'react-bootstrap'
@@ -14,6 +14,24 @@ import '../../Assets/responsive.css'
 export default function TopNavigation(props)  {
       const {title} = props
       const [show, setShow] = useState({modal:false})
+      const [navBackColor,setColor] = useState({navColor:'navColor',navTitle:'nav-title',cartImg:'cart-img',brandTitle:'brand-title'})
+
+      const onScroll=()=>{
+        if(window.scrollY>100){
+            setColor({navColor:'navColorScroll',navTitle:'nav-title-scroll',cartImg:'cart-img-scroll',brandTitle:'brand-title-scroll'})
+        }
+        else{
+            setColor({navColor:'navColor',navTitle:'nav-title',cartImg:'cart-img',brandTitle:'brand-title'})
+        }
+      }
+      
+      useEffect(() => {
+        window.addEventListener('scroll',onScroll)
+        return () =>{
+            window.removeEventListener('scroll',onScroll)
+        }
+      });
+       
 
         const modalOpen=()=>{
             setShow({
@@ -30,7 +48,7 @@ export default function TopNavigation(props)  {
         return (
             <Fragment>
                  <title>{title}</title>
-               <Navbar bg="success" variant="dark" expand="lg" sticky="top">
+               <Navbar variant="" className={navBackColor.navColor} expand="lg" sticky="top">
                     <Container fluid>
                        
                         <Navbar.Brand>
@@ -41,23 +59,23 @@ export default function TopNavigation(props)  {
                         height="30"
                         className="d-inline-block align-top m-1"
                         />{' '}
-                           <NavLink exact to='/' activeStyle={{color:'#fff'}} className="brand-title"> E-commerce</NavLink>
+                           <NavLink exact to='/' activeStyle={{color:'#fff'}} className={navBackColor.brandTitle}> E-commerce</NavLink>
                         </Navbar.Brand>
                       
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="m-auto">
-                            <Nav.Link as={NavLink} className="nav-title" exact to='/'>Home</Nav.Link>
-                            <Nav.Link as={NavLink} className="nav-title" exact to='/products'> Products</Nav.Link>
-                            <Nav.Link as={NavLink} className="nav-title" exact to='/About'> About</Nav.Link>
-                            <Nav.Link as={NavLink} className="nav-title" exact to='/contact'> contact</Nav.Link>
-                            <Nav.Link as={NavLink} className="nav-title" exact to='/account'> Account</Nav.Link>
-                            <Nav.Link as={NavLink} className="nav-title" exact to='/helps_more'>Helps & More</Nav.Link>
-                            <Nav.Link as={NavLink} className="nav-title" exact to='/checkout'> CheckOut</Nav.Link>
-                            <Nav.Link as={NavLink} className="nav-title" exact to='/order'> Order</Nav.Link>
-                            <Nav.Link as={NavLink} className="nav-title" exact to='#' onClick={modalOpen}><FontAwesomeIcon icon={faSearch}/> Search</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='/'>Home</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='/products'> Products</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='/About'> About</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='/contact'> contact</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='/account'> Account</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='/helps_more'>Helps & More</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='/checkout'> CheckOut</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='/order'> Order</Nav.Link>
+                            <Nav.Link as={NavLink} className={navBackColor.navTitle} exact to='#' onClick={modalOpen}><FontAwesomeIcon icon={faSearch}/> Search</Nav.Link>
                         </Nav>
-                        <HashRouter><NavLink exact to="/cart"><img src={cartImg} className="cart-img"/></NavLink></HashRouter>
+                        <HashRouter><NavLink exact to="/cart"><img src={cartImg} className={navBackColor.cartImg}/></NavLink></HashRouter>
                         </Navbar.Collapse>
 
                             <Modal
