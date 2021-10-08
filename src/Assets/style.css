@@ -139,7 +139,7 @@
 }
 .feature-img{
     height: 210px;
-    width: 100%;
+    width: 106%;
 }
 
 /* feature products */
@@ -169,7 +169,10 @@
 }
 .product-img{
     height: 280px;
-    width: 100%;
+    width: 106%;
+}
+.wave{
+    width: 106%;
 }
 .product-title{
     font-size: 16px !important;
@@ -812,4 +815,12 @@
     font-size: 18px;
     font-weight: 600;
     font-family: 'Raleway', sans-serif;
+}
+
+/* Skeleton icon margin header section*/
+.skeletonIconMargin{
+    margin-top: 28%;
+}
+.skeletonIconImgMargin{
+    margin-top: 19%;
 }

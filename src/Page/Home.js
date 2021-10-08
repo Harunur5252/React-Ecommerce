@@ -23,7 +23,7 @@ export default function Home () {
             <Fragment>
                 <TopNavigation title="Home"/>
                 <Header />
-                 <Carousels />
+                <Carousels />
                 <FeatureCategory />
                 <FeatureProduct />
                 <LatestProduct />

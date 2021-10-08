@@ -69,7 +69,20 @@
     .news-title-margin-top{
         margin-top: 23%;
     }
-    
+    .skeletonIconImgMargin{
+        margin-left: 5%;
+    }
+    .feature-img{
+        height: 210px;
+        width: 106%;
+    }
+    .product-img{
+        height: 280px;
+        width: 106%;
+    }
+
+
+   
 }
 
 @media (min-width: 574px) and (max-width: 575.98px) { 
@@ -147,6 +160,21 @@
 .news-title-margin-top{
     margin-top: 22%;
 }
+.skeletonIconImgMargin{
+    margin-left: 5%;
+}
+.feature-img{
+    height: 210px;
+    width: 105%;
+}
+.product-img{
+    height: 280px;
+    width: 105%;
+}
+.wave{
+   width: 105%;
+}
+
     
 }
 
@@ -225,6 +253,20 @@
     .news-title-margin-top{
         margin-top: 18%;
     }
+    .skeletonIconImgMargin{
+        margin-left: 5%;
+    }
+    .feature-img{
+        height: 210px;
+        width: 105%;
+    }
+    .product-img{
+        height: 280px;
+        width: 105%;
+    }
+    .wave{
+        width: 105%;
+     }
 }
 
  @media (min-width: 768px) and (max-width: 992px) { 
@@ -309,6 +351,9 @@
     }
     .news-title-margin-top{
         margin-top: 16%;
+    }
+    .skeletonIconImgMargin{
+        margin-left: 5%;
     }
 }
 
