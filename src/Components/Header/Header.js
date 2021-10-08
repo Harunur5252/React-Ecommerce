@@ -1,8 +1,10 @@
 
 import React, { Fragment } from 'react'
-import { Container, Row,Col,Button } from 'react-bootstrap'
+import { Container, Row,Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import headerImg from '../../images/banner-e-commerce11.png'
+import Loading from '../Loading/Loading'
+
 
 export default function Header () {
       
@@ -14,7 +16,7 @@ export default function Header () {
                            <div className="header">
                                <h1 className="header-title">Give Your Workout<br/>A New Way</h1>
                                 <p className="text-justify header-des">
-                                Google Fonts is a library of 1,093 free licensed font families and APIs for convenient use via CSS and Android. The library also has delightful and beautifully crafted icons for common actions and items
+                                  Google Fonts is a library of 1,093 free licensed font families and APIs for convenient use via CSS and Android. The library also has delightful and beautifully crafted icons for common actions and items
                                 </p>
                                 <Link to='/products' className="button">Explore More &#x2192;</Link>
                            </div>

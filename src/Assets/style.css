@@ -455,7 +455,7 @@
 .about-back-img{
     background-image: url('../images/featured-41-of-174.jpg');
     min-height: 500px;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
