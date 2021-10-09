@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
 import { faFacebook,faYoutube,faTwitter,faInstagram } from '@fortawesome/free-brands-svg-icons'
-import  {faEnvelope,faPhone} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { BrowserRouter, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import app from '../../images/logo-white.png'
 import play from '../../images/play-store.png'
 import store from '../../images/app-store.png'
