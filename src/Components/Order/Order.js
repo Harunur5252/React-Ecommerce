@@ -405,7 +405,7 @@ export default function Order () {
                         spinner ?
                         <Row>
                             <Col lg={6} md={6} sm={12}>
-                               <Skeleton variant="text" animation="wave" style={{width:'100%', height:'4vh'}} />  
+                              <Skeleton variant="text" animation="wave" style={{width:'100%', height:'4vh'}} />  
                             </Col>
                         </Row>
 
@@ -421,32 +421,64 @@ export default function Order () {
                 </Container>
 
                 <Container className="mb-4">
-                    <Row>
-                        <Col lg={3} md={6} sm={12}>
-                            <FloatingLabel
-                                controlId="floatingInput"
-                                className="mb-3"
-                            >
-                                <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'8vh'}} /> 
-                            </FloatingLabel>
-                        </Col>
+                    {
+                        spinner ?
+                               <Row>
+                                    <Col lg={3} md={6} sm={12}>
+                                        <FloatingLabel
+                                            controlId="floatingInput"
+                                            className="mb-3"
+                                        >
+                                            <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'8vh'}} />  
+                                        </FloatingLabel>
+                                    </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <Link to='#' >
-                             <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'6vh'}} /> 
-                            </Link>
-                        </Col>
+                                    <Col lg={3} md={6} sm={12}>
+                                    <Link to='#'>
+                                       <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'6vh'}} />  
+                                    </Link>
+                                    </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <Skeleton variant="text" animation="wave" style={{width:'100%', height:'4vh'}} /> 
-                        </Col>
+                                    <Col lg={3} md={6} sm={12}>
+                                       <Skeleton variant="text" animation="wave" style={{width:'100%', height:'4vh'}} />  
+                                    </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <Link to='#'>
-                               <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'6vh'}} /> 
-                            </Link>
-                        </Col>
-                    </Row>
+                                    <Col lg={3} md={6} sm={12}>
+                                    <Link to='#'> 
+                                       <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'6vh'}} />  
+                                    </Link>
+                                    </Col>
+                                </Row>
+
+
+                                :
+
+                            <Row>
+                                <Col lg={3} md={6} sm={12}>
+                                    <FloatingLabel
+                                        controlId="floatingInput"
+                                        label="E.g Call me when you arrive"
+                                        className="mb-3"
+                                    >
+                                        <Form.Control type="email" placeholder="name@example.com" />
+                                    </FloatingLabel>
+                                </Col>
+
+                                <Col lg={3} md={6} sm={12}>
+                                    <Link to='#' className="btn-3 text" >Submit</Link>
+                                </Col>
+
+                                <Col lg={3} md={6} sm={12}>
+                                   <p className="privacy-des-sm">Would you like to cancel this order?</p>
+                                </Col>
+
+                                <Col lg={3} md={6} sm={12}>
+                                   <Link to='#' className="btn-4 text" >Cancel Order</Link>
+                                </Col>
+                            </Row>
+
+                    }
+                    
                 </Container>
 
             </Fragment>
