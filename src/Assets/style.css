@@ -111,6 +111,22 @@
    background-color: #563434;
 }
 
+.button-2{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff !important;
+    padding: 8px 30px;
+    margin: 15px 0;
+    border-radius: 30px;
+    transition: background 0.6s;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button-2:hover{
+   background-color: #563434;
+}
+
 /* carousel slider section */
 .carousel-img{
     height: 350px;
@@ -171,6 +187,7 @@
     height: 280px;
     width: 106%;
 }
+
 .wave{
     width: 106%;
 }
@@ -462,6 +479,16 @@
     height:445px;
     width:600px;
 }
+.account-card{
+    min-width: 41.4rem;
+}
+.account-card-2{
+    min-width: 41.5rem;
+}
+.ske-acc-height-width{
+    min-height: 66vh;
+    min-width: 100%;
+}
 
 /* about section */
 
@@ -504,6 +531,9 @@
     margin-top: 11%;
 }
 
+.about-skeleton-length{
+    margin-left: 0%;
+}
 /* helps more section */
 .help-more-img-1{
     background-image: url('../images/call-service.jpg');
@@ -701,7 +731,17 @@
     cursor: pointer;
     box-sizing: border-box;
 }
+.pay-card-2{
+    height: 10rem;
+    padding: 22px;
+    box-shadow: 0 0 4px 2px rgba(86, 5, 218, 0.2)!important;
+    cursor: pointer;
+    box-sizing: border-box;
+}
 .pay-card:hover{
+    box-shadow: 0 0 8px 4px rgba(218, 5, 33, 0.2) !important;
+}
+.pay-card-2:hover{
     box-shadow: 0 0 8px 4px rgba(218, 5, 33, 0.2) !important;
 }
 .pay-text{
@@ -730,8 +770,21 @@
 .box:hover{
     box-shadow: 0 0 8px 3px rgba(29, 31, 14, 0.2)!important;
 }
+.box-0{
+    height: 3rem;
+    padding: 7px;
+    box-shadow: 0 0 4px 3px rgba(5, 218, 5, 0.2)!important;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.box-0:hover{
+    box-shadow: 0 0 8px 3px rgba(29, 31, 14, 0.2)!important;
+}
 .form-margin{
     margin-left: 34%;
+}
+.form-margin-1{
+    margin-left: 0%;
 }
 .box-2{
     height: 7rem;
@@ -744,8 +797,31 @@
     box-shadow: 0 0 8px 3px rgba(52, 112, 33, 0.2)!important;
 }
 
+.box-10{
+    height: 7rem;
+    padding: 12px;
+    box-shadow: 0 0 4px 3px rgba(218, 55, 5, 0.2)!important;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.box-10:hover{
+    box-shadow: 0 0 8px 3px rgba(52, 112, 33, 0.2)!important;
+}
+
 .box-3{
     height: 15rem;
+    padding: 18px;
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3)!important;
+    box-sizing: border-box;
+}
+.box-11{
+    height: 11.8rem;
+    padding: 18px;
+    box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3)!important;
+    box-sizing: border-box;
+}
+.box-12{
+    height: 12.8rem;
     padding: 18px;
     box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.3)!important;
     box-sizing: border-box;

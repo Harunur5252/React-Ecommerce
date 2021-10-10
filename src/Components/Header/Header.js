@@ -25,8 +25,8 @@ export default function Header () {
                                ? 
                                             
                                  <div className="skeletonIconMargin">
-                                     <Skeleton animation="wave" variant="text" style={{width:'60%', height:'3vh'}}/>
-                                     <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}} />
+                                     <Skeleton animation="wave" variant="text" style={{width:'60%', height:'5vh'}}/>
+                                     <Skeleton animation="wave" variant="text" style={{width:'40%', height:'5vh'}} />
                                      <Skeleton animation="wave" variant="text" style={{width:'95%', height:'2vh'}} />
                                      <Skeleton animation="wave" variant="text" style={{width:'95%', height:'2vh'}} />
                                      <Skeleton animation="wave" variant="text" style={{width:'30%', height:'2vh'}} /><br/>

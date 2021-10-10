@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react'
+import React, { Fragment,useState,useEffect } from 'react'
 import { Container,Row,Col,Form } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar,faStarHalfAlt } from '@fortawesome/free-solid-svg-icons'
 import { makeStyles } from '@material-ui/core/styles';
 import Pagination from '@material-ui/lab/Pagination';
 import { Link } from 'react-router-dom';
+import Skeleton from '@material-ui/lab/Skeleton';
 import product_1 from '../../images/product-1.jpg'
 import product_2 from '../../images/product-2.jpg'
 import product_3 from '../../images/product-3.jpg'
@@ -64,6 +65,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function AllProduct() {
    const classes = useStyles();
+   const [ spinner, setSpinner ] = useState(true);
+      
+   useEffect(() => {
+     setTimeout(() => setSpinner(false), 1000)
+   }, [])
+
         return (
             <Fragment>
                 <Container className="mb-5">
@@ -86,850 +93,1349 @@ export default function AllProduct() {
                     </Row>
 
                     <Row>
-                        <Col lg={3} md={6} sm={12}>
-                              <div className="product mt-5">
-                                 <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                    <img src={product_1} className="product-img rounded"/>
-                                 </Link>
-                                 <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                    <span className="product-title">Red Printed T-Shirt</span><br/>
-                                 </Link>
-                                 <span className="rating-star">
-                                    <FontAwesomeIcon icon={faStar}/>
-                                    <FontAwesomeIcon icon={faStar}/>
-                                    <FontAwesomeIcon icon={faStar}/>
-                                    <FontAwesomeIcon icon={faStar}/>
-                                    <FontAwesomeIcon icon={faStarHalfAlt}/>
-                                 </span>
-                                 <p className="product-price">$700.00</p>
-                              </div>
-                        </Col>
+                       {
+                          spinner ?
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_13} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                          <Row>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                  <img src={product_2} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                 <span className="product-title">Black Shoe Case</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                               </span>
-                               <p className="product-price">$600.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_14} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_15} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_16} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_1} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_2} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_3} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_4} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_5} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
 
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'45vh'}} />
+                                       <Skeleton animation="wave" variant="text" style={{width:'80%', height:'5vh'}}/>
+                                       <span className="rating-star">
+                                          <Skeleton animation="wave" variant="text" style={{width:'40%', height:'3vh'}}/>
+                                       </span>
+                                       <Skeleton animation="wave" variant="text" style={{width:'20%', height:'2vh'}}/>
+                                    </div>
+                              </Col>
+                          </Row>
+
+                          :
+
+
+                          <Row>
+                              <Col lg={3} md={6} sm={12}>
+                                    <div className="product mt-5">
+                                       <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                          <img src={product_1} className="product-img rounded"/>
+                                       </Link>
+                                       <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                          <span className="product-title">Red Printed T-Shirt</span><br/>
+                                       </Link>
+                                       <span className="rating-star">
+                                          <FontAwesomeIcon icon={faStar}/>
+                                          <FontAwesomeIcon icon={faStar}/>
+                                          <FontAwesomeIcon icon={faStar}/>
+                                          <FontAwesomeIcon icon={faStar}/>
+                                          <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                       </span>
+                                       <p className="product-price">$700.00</p>
+                                    </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_13} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_2} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Black Shoe Case</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                    </span>
+                                    <p className="product-price">$600.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_14} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_15} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_16} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_1} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_2} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_3} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_4} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_5} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              
+
+
+
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_17} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_18} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_19} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_20} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_21} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_22} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_23} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_24} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_25} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_3} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Gray Gins Pent</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                    </span>
+                                    <p className="product-price">$1000.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_4} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Black T-Shirt</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$600.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_5} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">White Shoe Case</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$900.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_6} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Black Printed T-Shirt</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$800.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_7} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Black Muja</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$200.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_8} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Black Watch</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$1200.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_9} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Gray Diamond Watch</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$1500.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_10} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Black Shoe Case</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$1300.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_11} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Gray Shoe Case</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$900.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product">
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`}>
+                                       <img src={product_12} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Black Gins Pent</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$2000.00</p>
+                                 </div>
+                              </Col>
+
+
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_26} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_27} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_28} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_29} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_30} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_31} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_32} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_6} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_7} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_8} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_9} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_10} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_11} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+
+                              <Col lg={3} md={6} sm={12}>
+                                 <div className="product mt-5">
+                                    <Link to={`/productDetails/1/red_printed_saree`}>
+                                       <img src={sub_category_img_12} className="product-img rounded"/>
+                                    </Link>
+                                    <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
+                                       <span className="product-title">Red Printed Saree</span><br/>
+                                    </Link>
+                                    <span className="rating-star">
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStar}/>
+                                       <FontAwesomeIcon icon={faStarHalfAlt}/>
+                                    </span>
+                                    <p className="product-price">$700.00</p>
+                                 </div>
+                              </Col>
+                          </Row>
+                          
+                       }
                         
-
-
-
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_17} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_18} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_19} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_20} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_21} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_22} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_23} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_24} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_25} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_3} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                 <span className="product-title">Gray Gins Pent</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                               </span>
-                               <p className="product-price">$1000.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_4} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                 <span className="product-title">Black T-Shirt</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$600.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_5} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                 <span className="product-title">White Shoe Case</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$900.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_6} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                 <span className="product-title">Black Printed T-Shirt</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$800.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_7} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                 <span className="product-title">Black Muja</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$200.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_8} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                 <span className="product-title">Black Watch</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$1200.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_9} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Gray Diamond Watch</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$1500.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                  <img src={product_10} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Black Shoe Case</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$1300.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_11} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                 <span className="product-title">Gray Shoe Case</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$900.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product">
-                               <Link to={`/productDetails/1/red_printed_t-shirt`}>
-                                 <img src={product_12} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Black Gins Pent</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$2000.00</p>
-                           </div>
-                        </Col>
-
-
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_26} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_27} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_28} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_29} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_30} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_31} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_32} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_6} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_7} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_8} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_9} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_10} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_11} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
-
-                        <Col lg={3} md={6} sm={12}>
-                           <div className="product mt-5">
-                               <Link to={`/productDetails/1/red_printed_saree`}>
-                                  <img src={sub_category_img_12} className="product-img rounded"/>
-                               </Link>
-                               <Link to={`/productDetails/1/red_printed_t-shirt`} className="text">
-                                  <span className="product-title">Red Printed Saree</span><br/>
-                               </Link>
-                               <span className="rating-star">
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStar}/>
-                                  <FontAwesomeIcon icon={faStarHalfAlt}/>
-                               </span>
-                               <p className="product-price">$700.00</p>
-                           </div>
-                        </Col>
                     </Row>
                     <div className={classes.root} style={{marginTop:'5%',background:'pink',paddingTop:'10px',paddingBottom:'20px'}}>
                         <Pagination count={10} showFirstButton  showLastButton  variant="outlined" size="large" color="secondary" />

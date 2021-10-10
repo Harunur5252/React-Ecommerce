@@ -31,7 +31,7 @@ export default function Offer () {
                                         <Skeleton animation="wave" variant="text" style={{width:'90%', height:'3vh'}}/>
                                         <Skeleton animation="wave" variant="text" style={{width:'90%', height:'3vh'}}/>
                                         <Skeleton animation="wave" variant="text" style={{width:'44%', height:'3vh'}}/><br/>
-                                        <Skeleton animation="wave" variant="rectangle" style={{width:'40%', height:'8vh'}}/>
+                                        <Skeleton animation="wave" variant="rectangular" style={{width:'40%', height:'8vh'}}/>
                                     </div>
                                 </Col>
                             </Row>

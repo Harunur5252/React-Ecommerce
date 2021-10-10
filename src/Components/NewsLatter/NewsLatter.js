@@ -24,8 +24,8 @@ export default function NewsLatter() {
                                     <div className="news-card-box">
                                         <Skeleton animation="wave" variant="text" style={{width:'50%', height:'6vh'}}/>
                                         <Skeleton animation="wave" variant="text" style={{width:'50%', height:'5vh'}}/>
-                                        <Skeleton animation="wave" variant="rectangle" style={{width:'40%', height:'6vh'}}/><br/>
-                                        <Skeleton animation="wave" variant="rectangle" style={{width:'20%', height:'5vh'}}/>
+                                        <Skeleton animation="wave" variant="rectangular" style={{width:'40%', height:'6vh'}}/><br/>
+                                        <Skeleton animation="wave" variant="rectangular" style={{width:'20%', height:'5vh'}}/>
                                     </div>
                                 </div>
                             </Col>

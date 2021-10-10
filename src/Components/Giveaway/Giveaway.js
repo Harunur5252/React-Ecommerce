@@ -36,7 +36,7 @@ export default function Giveaway () {
                                             <Skeleton animation="wave" variant="text" style={{width:'80%', height:'3vh'}}/>
                                             <Skeleton animation="wave" variant="text" style={{width:'80%', height:'3vh'}}/>
                                             <Skeleton animation="wave" variant="text" style={{width:'46%', height:'3vh'}}/><br/>
-                                            <Skeleton animation="wave" variant="rectangle" style={{width:'44%', height:'8vh'}}/>
+                                            <Skeleton animation="wave" variant="rectangular" style={{width:'44%', height:'8vh'}}/>
                                         </div>
                                 </Col>
                             </Row>

@@ -90,7 +90,36 @@
     .nesLatterColor{
         min-width: 107%;
     }
-
+    .account-card{
+        min-width: 23.5rem;
+    }
+    .account-card-2{
+        min-width: 23.5rem;
+    }
+    .account-card-3{
+        min-width: 25rem;
+    }
+    .pay-card-2{
+        height: 11.5rem;
+        padding: 22px;
+    }
+    .box-0{
+        height: 3.3rem;
+        padding: 7px;
+    }
+    .box-10{
+        height: 11rem;
+        padding: 12px;
+    }
+    .form-margin-1{
+        margin-left: 0%;
+    }
+    .box-11{
+        height: 13.5rem;
+    }
+    .box-12{
+        height: 14.9rem;
+    }
    
 }
 
@@ -121,7 +150,6 @@
     margin: 0 0 0 153px;
     padding: 2px;
  }
-
 .hr{
     width: 280px;
 }
@@ -192,6 +220,36 @@
 }
 .nesLatterColor{
     min-width: 105%;
+}
+.account-card{
+    min-width: 34.4rem;
+}
+.account-card-2{
+    min-width: 34.4rem;
+}
+.account-card-3{
+    min-width: 35.9rem;
+}
+.pay-card-2{
+    height: 11.5rem;
+    padding: 22px;
+}
+.box-0{
+    height: 3.3rem;
+    padding: 7px;
+}
+.box-10{
+    height: 11rem;
+    padding: 12px;
+}
+.form-margin-1{
+    margin-left: 5%;
+}
+.box-11{
+    height: 13.5rem;
+}
+.box-12{
+    height: 15rem;
 }
     
 }
@@ -294,6 +352,36 @@
     }
     .nesLatterColor{
         min-width: 105%;
+    }
+    .account-card{
+        min-width: 34.5rem;
+    }
+    .account-card-2{
+        min-width: 34.5rem;
+    }
+    .account-card-3{
+        min-width: 36rem;
+    }
+    .pay-card-2{
+        height: 11.5rem;
+        padding: 22px;
+    }
+    .box-0{
+        height: 3.3rem;
+        padding: 7px;
+    }
+    .box-10{
+        height: 11rem;
+        padding: 12px;
+    }
+    .form-margin-1{
+        margin-left: 2%;
+    }
+    .box-11{
+        height: 13.6rem;
+    }
+    .box-12{
+        height: 15.2rem;
     }
 }
 
@@ -400,6 +488,23 @@
     }
     .nesLatterColor{
         min-width: 103%;
+    }
+    .account-card{
+        min-width: 23.4rem;
+    }
+    .account-card-2{
+        min-width: 46.5rem;
+    }
+    .account-card-3{
+        min-width: 48rem;
+    }
+    .box-0{
+        height: 3.3rem;
+        padding: 7px;
+    }
+    .box-10{
+        height: 8.4rem;
+        padding: 12px;
     }
 }
 
@@ -513,6 +618,36 @@
     .nesLatterColor{
         min-width: 103%;
     }
+    .account-card{
+        min-width: 30.4rem;
+    }
+    .account-card-2{
+        min-width: 60.4rem;
+    }
+    .account-card-3{
+        min-width: 62rem;
+    }
+    .pay-card-2{
+        height: 11.5rem;
+        padding: 22px;
+    }
+    .box-0{
+        height: 3.3rem;
+        padding: 7px;
+    }
+    .box-10{
+        height: 8.4rem;
+        padding: 12px;
+    }
+    .form-margin-1{
+        margin-left: 2%;
+    }
+    .box-11{
+        height: 13.6rem;
+    }
+    .box-12{
+        height: 15.2rem;
+    }
 }
 @media (min-width:1200px) and (max-width: 1354px) { 
     .header{
@@ -595,5 +730,14 @@
     }
     .nesLatterColor{
         min-width: 102%;
+    }
+    .account-card{
+        min-width: 36.7rem;
+    }
+    .account-card-2{
+        min-width: 73.4rem;
+    }
+    .account-card-3{
+        min-width: 75rem;
     }
 }
