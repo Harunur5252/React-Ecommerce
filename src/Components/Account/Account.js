@@ -17,7 +17,7 @@ export default function Account () {
 
         return (
             <Fragment>
-                <Container fluid className="account-color">
+                <Container fluid className="account-color" id="header">
                     <Row>
                         {
                             spinner ?
@@ -61,7 +61,7 @@ export default function Account () {
 
                             <Row>
                                 <Col lg={6} md={6} sm={12} className="mt-5 mb-5">
-                                    <img src={account_img} className="account-img-size rounded"/>
+                                    <img src={account_img} className="account-img-size rounded animated"/>
                                 </Col>
 
                                 <Col lg={6} md={6} sm={12} className="mt-5 mb-5">

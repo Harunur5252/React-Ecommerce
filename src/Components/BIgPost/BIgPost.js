@@ -17,7 +17,7 @@ export default function BigPost () {
    const [ spinner, setSpinner ] = useState(true);
       
    useEffect(() => {
-     setTimeout(() => setSpinner(false), 50000)
+     setTimeout(() => setSpinner(false), 1000)
    }, [])
 
         return (
