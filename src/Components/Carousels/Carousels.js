@@ -41,7 +41,7 @@ export default function Carousels () {
                             {
                              spinner
                              ?
-                              <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'50vh'}} />
+                              <Skeleton variant="rect" animation="wave" style={{width:'100%', height:'50vh'}} />
                              :
                                 <Slider {...settings}>
                                     <div className=" rounded">

@@ -74,25 +74,25 @@ export default function FeatureCategory () {
                                <Row>
                                     <Col lg={3} md={6} sm={12}>
                                         <div className="center">
-                                          <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'37vh'}} />
+                                          <Skeleton variant="rect" animation="wave" className="wave rounded" style={{height:'37vh'}} />
                                         </div>
                                     </Col>
 
                                     <Col lg={3} md={6} sm={12}>
                                         <div className="center">
-                                          <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'37vh'}} />
+                                          <Skeleton variant="rect" animation="wave" className="wave rounded" style={{height:'37vh'}} />
                                         </div>
                                     </Col>
 
                                     <Col lg={3} md={6} sm={12}>
                                         <div className="center">
-                                          <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'37vh'}} />
+                                          <Skeleton variant="rect" animation="wave" className="wave rounded" style={{height:'37vh'}} />
                                         </div>
                                     </Col>
 
                                     <Col lg={3} md={6} sm={12}>
                                         <div className="center">
-                                          <Skeleton variant="rectangular" animation="wave" className="wave rounded" style={{height:'37vh'}} />
+                                          <Skeleton variant="rect" animation="wave" className="wave rounded" style={{height:'37vh'}} />
                                         </div>
                                     </Col>
                                </Row>

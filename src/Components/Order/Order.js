@@ -35,7 +35,7 @@ export default function Order () {
                                 <Col lg={6} md={12} sm={12} >
                                     <Row>
                                         <Col className="text-center">
-                                           <Skeleton variant="rectangular" animation="wave" className="rounded" style={{width:'100%', height:'25vh'}} />
+                                           <Skeleton variant="rect" animation="wave" className="rounded" style={{width:'100%', height:'25vh'}} />
                                         </Col>
 
                                         <Col className="text-center">
@@ -95,7 +95,7 @@ export default function Order () {
                                 <Col lg={3} md={6} sm={12} className="p-2">
                                     <Link to='#'>
                                         <div className="pay-card-2 text-center">
-                                            <Skeleton variant="rectangular" className="rounded" animation="wave" style={{width:'100%', height:'16vh'}} />
+                                            <Skeleton variant="rect" className="rounded" animation="wave" style={{width:'100%', height:'16vh'}} />
                                             <Skeleton variant="text" animation="wave" style={{width:'100%', height:'3vh'}} />
                                         </div>
                                     </Link>
@@ -104,7 +104,7 @@ export default function Order () {
                                 <Col lg={3} md={6} sm={12} className="p-2">
                                     <Link to='#'>
                                         <div className="pay-card-2 text-center">
-                                            <Skeleton variant="rectangular" className="rounded" animation="wave" style={{width:'100%', height:'16vh'}} />
+                                            <Skeleton variant="rect" className="rounded" animation="wave" style={{width:'100%', height:'16vh'}} />
                                             <Skeleton variant="text" animation="wave" style={{width:'100%', height:'3vh'}} />
                                         </div>
                                     </Link>
@@ -113,7 +113,7 @@ export default function Order () {
                                 <Col lg={3} md={6} sm={12} className="p-2">
                                     <Link to='#'>
                                         <div className="pay-card-2 text-center">
-                                            <Skeleton variant="rectangular" className="rounded" animation="wave" style={{width:'100%', height:'16vh'}} />
+                                            <Skeleton variant="rect" className="rounded" animation="wave" style={{width:'100%', height:'16vh'}} />
                                             <Skeleton variant="text" animation="wave" style={{width:'100%', height:'3vh'}} />
                                         </div>
                                     </Link>
@@ -122,7 +122,7 @@ export default function Order () {
                                 <Col lg={3} md={6} sm={12} className="p-2">
                                     <Link to='#'>
                                         <div className="pay-card-2 text-center">
-                                            <Skeleton variant="rectangular" className="rounded" animation="wave" style={{width:'100%', height:'16vh'}} />
+                                            <Skeleton variant="rect" className="rounded" animation="wave" style={{width:'100%', height:'16vh'}} />
                                             <Skeleton variant="text" animation="wave" style={{width:'100%', height:'3vh'}} />
                                         </div>
                                     </Link>
@@ -203,7 +203,7 @@ export default function Order () {
                                 <Col lg={6} md={12} sm={12} className="p-2">
                                     <Link to='#' className="text">
                                         <div className="box-0">
-                                           <Skeleton variant="rectangular" className="rounded" animation="wave" style={{width:'100%', height:'5vh'}} />
+                                           <Skeleton variant="rect" className="rounded" animation="wave" style={{width:'100%', height:'5vh'}} />
                                         </div>
                                     </Link>
                                 </Col>
@@ -211,7 +211,7 @@ export default function Order () {
                                 <Col lg={6} md={12} sm={12} className="p-2">
                                     <Link to='#' className="text">
                                         <div className="box-0">
-                                           <Skeleton variant="rectangular" className="rounded" animation="wave" style={{width:'100%', height:'5vh'}} />
+                                           <Skeleton variant="rect" className="rounded" animation="wave" style={{width:'100%', height:'5vh'}} />
                                         </div>
                                     </Link>
                                 </Col>
@@ -263,12 +263,12 @@ export default function Order () {
                                                 <Row className="align-items-center">
                                                     <Col lg={6} md={6} sm={12}>
                                                         <InputGroup>
-                                                          <Skeleton variant="rectangular" className="rounded" animation="wave" style={{width:'100%', height:'8vh'}} />
+                                                          <Skeleton variant="rect" className="rounded" animation="wave" style={{width:'100%', height:'8vh'}} />
                                                         </InputGroup>
                                                     </Col>
                                                     <Col lg={6} md={6} sm={12}>
                                                         <Link to='#'>
-                                                           <Skeleton variant="rectangular" className="rounded" animation="wave" style={{width:'100%', height:'6vh'}} />
+                                                           <Skeleton variant="rect" className="rounded" animation="wave" style={{width:'100%', height:'6vh'}} />
                                                         </Link>
                                                     </Col>
                                                 </Row>         
@@ -429,13 +429,13 @@ export default function Order () {
                                             controlId="floatingInput"
                                             className="mb-3"
                                         >
-                                            <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'8vh'}} />  
+                                            <Skeleton variant="rect" animation="wave" style={{width:'100%', height:'8vh'}} />  
                                         </FloatingLabel>
                                     </Col>
 
                                     <Col lg={3} md={6} sm={12}>
                                     <Link to='#'>
-                                       <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'6vh'}} />  
+                                       <Skeleton variant="rect" animation="wave" style={{width:'100%', height:'6vh'}} />  
                                     </Link>
                                     </Col>
 
@@ -445,7 +445,7 @@ export default function Order () {
 
                                     <Col lg={3} md={6} sm={12}>
                                     <Link to='#'> 
-                                       <Skeleton variant="rectangular" animation="wave" style={{width:'100%', height:'6vh'}} />  
+                                       <Skeleton variant="rect" animation="wave" style={{width:'100%', height:'6vh'}} />  
                                     </Link>
                                     </Col>
                                 </Row>

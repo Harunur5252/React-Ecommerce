@@ -22,7 +22,7 @@ export default function Giveaway () {
                             <Row>
                                     <Col lg={6} md={6} sm={12} className="mt-2">
                                         <div className="offer-margin">
-                                           <Skeleton variant="circular" className="offer-skeleton-2 rounded-circle" style={{width:'100%', height:'46vh'}} />
+                                           <Skeleton variant="circle" className="offer-skeleton-2" style={{width:'100%', height:'46vh'}} />
                                         </div>
                                     </Col>
 
@@ -36,7 +36,7 @@ export default function Giveaway () {
                                             <Skeleton animation="wave" variant="text" style={{width:'80%', height:'3vh'}}/>
                                             <Skeleton animation="wave" variant="text" style={{width:'80%', height:'3vh'}}/>
                                             <Skeleton animation="wave" variant="text" style={{width:'46%', height:'3vh'}}/><br/>
-                                            <Skeleton animation="wave" variant="rectangular" style={{width:'44%', height:'8vh'}}/>
+                                            <Skeleton animation="wave" variant="rect" style={{width:'44%', height:'8vh'}}/>
                                         </div>
                                 </Col>
                             </Row>

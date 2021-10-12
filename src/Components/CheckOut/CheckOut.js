@@ -38,38 +38,38 @@ export default function CheckOut () {
                                                 <Form>
                                                         <Row className="mb-3">
                                                             <Form.Group as={Col} controlId="formGridName">
-                                                               <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'6vh'}} />
+                                                               <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'6vh'}} />
                                                             </Form.Group>
 
                                                             <Form.Group as={Col} controlId="formGridMobile">
-                                                                <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'6vh'}} />
+                                                                <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'6vh'}} />
                                                             </Form.Group>
                                                         </Row>
                                                         <Row className="mb-3">
                                                             <Form.Group as={Col} controlId="formGridCity">
-                                                               <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'6vh'}} />
+                                                               <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'6vh'}} />
                                                             </Form.Group>
 
                                                             <Form.Group as={Col} controlId="formGridState">
-                                                              <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'6vh'}} />
+                                                              <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'6vh'}} />
                                                             </Form.Group>
 
                                                             <Form.Group as={Col} controlId="formGridState">
-                                                              <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'6vh'}} />
+                                                              <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'6vh'}} />
                                                             </Form.Group>
                                                         </Row>
                                                         <Form.Group className="mb-3" controlId="formGridAddress1">
-                                                           <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'15vh'}} />
+                                                           <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'15vh'}} />
                                                         </Form.Group>   
                                                         <Link to='#' >
-                                                           <Skeleton variant="rectangular" className="rounded" style={{width:'20%', height:'6vh'}} />
+                                                           <Skeleton variant="rect" className="rounded" style={{width:'20%', height:'6vh'}} />
                                                         </Link>
                                                         </Form>
                                                 </Col>
 
                                                 <Col lg={6} md={12} sm={12} className="mt-3 p-1">
                                                      <Skeleton variant="text" className="rounded" style={{width:'100%', height:'5vh'}} /><br/>
-                                                     <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'6vh'}} />
+                                                     <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'6vh'}} />
                                                      <Skeleton variant="text" className="rounded" style={{width:'100%', height:'3vh'}} /><br/>
                                                      <Skeleton variant="text" className="rounded" style={{width:'100%', height:'5vh'}} /><br/>
                                                      <Skeleton variant="text" className="rounded" style={{width:'100%', height:'3vh'}} />

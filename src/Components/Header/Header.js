@@ -52,7 +52,7 @@ export default function Header () {
 
                               ? 
                                 <div className="skeletonIconImgMargin">
-                                    <Skeleton variant="rectangular" animation="wave" style={{width:'95%', height:'40vh'}} />
+                                    <Skeleton variant="rect" animation="wave" style={{width:'95%', height:'40vh'}} />
                                 </div>
 
                               :

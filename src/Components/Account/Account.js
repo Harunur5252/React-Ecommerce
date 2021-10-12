@@ -23,7 +23,7 @@ export default function Account () {
                             spinner ?
                             <Row>
                                 <Col lg={6} md={6} sm={12} className="mt-5 mb-5 account-card-3">
-                                  <Skeleton variant="rectangular" className="rounded ske-acc-height-width" />
+                                  <Skeleton variant="rect" className="rounded ske-acc-height-width" />
                                 </Col>
 
                                 <Col lg={6} md={6} sm={12} className="mt-5 mb-5">
@@ -32,23 +32,23 @@ export default function Account () {
                                             <Card.Body>
                                                 <Row>
                                                     <Col lg={4} md={4} sm={12}>
-                                                       <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'8vh'}} />
+                                                       <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'8vh'}} />
                                                     </Col>
 
                                                     <Col lg={4} md={4} sm={12}>
-                                                       <Skeleton variant="rectangular" className="rounded" style={{width:'100%', height:'8vh'}} />
+                                                       <Skeleton variant="rect" className="rounded" style={{width:'100%', height:'8vh'}} />
                                                     </Col>
                                                 </Row>
-                                                 <Skeleton variant="rectangular" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
-                                                 <Skeleton variant="rectangular" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
-                                                 <Skeleton variant="rectangular" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
+                                                 <Skeleton variant="rect" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
+                                                 <Skeleton variant="rect" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
+                                                 <Skeleton variant="rect" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
                                                  <Row>
                                                      <Col lg={4} md={4} sm={12}>
-                                                        <Skeleton variant="rectangular" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
+                                                        <Skeleton variant="rect" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
                                                      </Col>
 
                                                      <Col lg={4} md={4} sm={12}>
-                                                        <Skeleton variant="rectangular" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
+                                                        <Skeleton variant="rect" className="rounded mt-3" style={{width:'100%', height:'6vh'}} />
                                                      </Col>
                                                  </Row>
                                             </Card.Body>

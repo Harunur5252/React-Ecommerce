@@ -24,31 +24,31 @@ export default function Brands () {
                             <Row className="brands-margin-2">
                                 <Col lg={2} md={4} sm={12} className="m-2">
                                     <div className="brands-img">
-                                       <Skeleton animation="wave" variant="rectangular" style={{width:'80%', height:'6vh'}}/>
+                                       <Skeleton animation="wave" variant="rect" style={{width:'80%', height:'6vh'}}/>
                                     </div>
                                 </Col>
 
                                 <Col lg={2} md={4} sm={12} className="m-2">
                                     <div className="brands-img">
-                                       <Skeleton animation="wave" variant="rectangular" style={{width:'80%', height:'6vh'}}/>
+                                       <Skeleton animation="wave" variant="rect" style={{width:'80%', height:'6vh'}}/>
                                     </div>
                                 </Col>
 
                                 <Col lg={2} md={4} sm={12} className="m-2">
                                     <div className="brands-img">
-                                       <Skeleton animation="wave" variant="rectangular" style={{width:'80%', height:'6vh'}}/>
+                                       <Skeleton animation="wave" variant="rect" style={{width:'80%', height:'6vh'}}/>
                                     </div>
                                 </Col>
 
                                 <Col lg={2} md={4} sm={12} className="m-2">
                                     <div className="brands-img">
-                                       <Skeleton animation="wave" variant="rectangular" style={{width:'80%', height:'6vh'}}/>
+                                       <Skeleton animation="wave" variant="rect" style={{width:'80%', height:'6vh'}}/>
                                     </div>
                                 </Col>
 
                                 <Col lg={2} md={4} sm={12} className="m-2">
                                     <div className="brands-img">
-                                       <Skeleton animation="wave" variant="rectangular" style={{width:'80%', height:'6vh'}}/>
+                                       <Skeleton animation="wave" variant="rect" style={{width:'80%', height:'6vh'}}/>
                                     </div>
                                 </Col>
                             </Row>
