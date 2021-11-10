@@ -58,7 +58,7 @@ export default function Career () {
 
                         <Col lg={4} md={6} md={12} className="mb-5">
                             <div>
-                                <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/Sinthia.jpg?q=best&webp=1" />
+                                <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web1/1.5.0+DataCenter-Release-2507/Default/components/page/Career/images/Sinthia.jpg?q=best&webp=1" />
                             </div>
                             <p className="text-justify com-des mt-2">Chaldal promotes female empowerment. They have provided a respectful environment for all female employees.</p>
                             <b>Sinthia</b><br/>
@@ -67,7 +67,7 @@ export default function Career () {
 
                         <Col lg={4} md={6} md={12} className="mb-5">
                             <div>
-                                <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/Raisul.png?q=best&webp=1" />
+                                <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web1/1.5.0+DataCenter-Release-2507/Default/components/page/Career/images/Raisul.png?q=best&webp=1" />
                             </div>
                             <p className="text-justify com-des mt-2">My profession is my passion and I LOVE my profession. Chaldal has given me the opportunity to build my dream career, which will help me to be successful in life</p>
                             <b>Raisul</b><br/>
@@ -76,7 +76,7 @@ export default function Career () {
 
                         <Col lg={4} md={6} md={12} className="mb-5">
                             <div>
-                                <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/Faria.jpg?q=best&webp=1" />
+                                <img className="rounded carrier-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web1/1.5.0+DataCenter-Release-2507/Default/components/page/Career/images/Faria.jpg?q=best&webp=1" />
                             </div>
                             <p className="text-justify com-des mt-2">We support our Shoppers and Customers round the clock until every issue and support call is resolved up until the last order is delivered.</p>
                             <b>Faria</b><br/>
@@ -96,7 +96,7 @@ export default function Career () {
 
                         <Col lg={3} md={6} md={12} className="mb-5">
                            <div className="text-center animation p-3">
-                               <img src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/discount.png?v3&q=best&webp=1" />
+                               <img src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web1/1.5.0+DataCenter-Release-2507/Default/components/page/Career/images/discount.png?v3&q=best&webp=1" />
                                <h4 className="team-title mt-2">Employee Discount</h4>
                                <p className="text-justify com-des">Enjoy 4% off on all of your orders on Chaldal and other offers</p>
                            </div>
@@ -104,7 +104,7 @@ export default function Career () {
 
                         <Col lg={3} md={6} md={12} className="mb-5">
                            <div className="text-center animation p-3">
-                               <img src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/graph.png?v3&q=best&webp=1" />
+                               <img src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web1/1.5.0+DataCenter-Release-2507/Default/components/page/Career/images/graph.png?v3&q=best&webp=1" />
                                <h4 className="team-title mt-2">Increments</h4>
                                <p className="text-justify com-des">Hard work always pays off at Chaldal. Get increments as you go along your journey with us</p>
                            </div>
@@ -112,7 +112,7 @@ export default function Career () {
 
                         <Col lg={3} md={6} md={12} className="mb-5">
                            <div className="text-center animation p-3">
-                               <img src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/laugh.png?v3&q=best&webp=1" />
+                               <img src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web1/1.5.0+DataCenter-Release-2507/Default/components/page/Career/images/laugh.png?v3&q=best&webp=1" />
                                <h4 className="team-title mt-2">Fun Work Environment</h4>
                                <p className="text-justify com-des">Work hard and have fun on the process. That’s our daily thirve</p>
                            </div>
@@ -120,7 +120,7 @@ export default function Career () {
 
                         <Col lg={3} md={6} md={12} className="mb-5">
                            <div className="text-center animation p-3">
-                               <img src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Career/images/mortarBoard.png?v3&q=best&webp=1" />
+                               <img src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web1/1.5.0+DataCenter-Release-2507/Default/components/page/Career/images/mortarBoard.png?v3&q=best&webp=1" />
                                <h4 className="team-title mt-2">Development through experience</h4>
                                <p className="text-justify com-des">Progress your learning on the job, through others and via everyday tasks & projects</p>
                            </div>

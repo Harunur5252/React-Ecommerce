@@ -34,7 +34,7 @@ export default function Team () {
                     <Row>
                         <Col lg={3} md={6} md={12} className="mt-3 text-center animation">
                             <div className="mt-2 mb-2">
-                                <img className="team-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Team/images/waseem_v3.png?q=best&m=210&webp=1&alpha=1"/>
+                                <img className="team-img" src="https://th.bing.com/th/id/OIP.cIu6-WdfUR3uKMR3ustr2wHaKl?pid=ImgDet&rs=1"/>
                                 <h2 className="team-name">Waseem Alim</h2>
                                 <p className="team-title text-justify ">Founder & Chief Executive Officer</p>
                                 <p className="com-des text-justify">
@@ -45,7 +45,7 @@ export default function Team () {
 
                         <Col lg={3} md={6} md={12} className="mt-3 text-center animation">
                             <div className="mt-2 mb-2">
-                                <img className="team-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Team/images/waseem_v3.png?q=best&m=210&webp=1&alpha=1"/>
+                                <img className="team-img" src="https://th.bing.com/th/id/OIP.cIu6-WdfUR3uKMR3ustr2wHaKl?pid=ImgDet&rs=1"/>
                                 <h2 className="team-name">Waseem Alim</h2>
                                 <p className="team-title text-justify ">Founder & Chief Executive Officer</p>
                                 <p className="com-des text-justify">
@@ -56,7 +56,7 @@ export default function Team () {
 
                         <Col lg={3} md={6} md={12} className="mt-3 text-center animation">
                             <div className="mt-2 mb-2">
-                                <img className="team-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Team/images/waseem_v3.png?q=best&m=210&webp=1&alpha=1"/>
+                                <img className="team-img" src="https://th.bing.com/th/id/OIP.cIu6-WdfUR3uKMR3ustr2wHaKl?pid=ImgDet&rs=1"/>
                                 <h2 className="team-name">Waseem Alim</h2>
                                 <p className="team-title text-justify ">Founder & Chief Executive Officer</p>
                                 <p className="com-des text-justify">
@@ -67,7 +67,7 @@ export default function Team () {
 
                         <Col lg={3} md={6} md={12} className="mt-3 text-center animation">
                             <div className="mt-2 mb-2">
-                                <img className="team-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Team/images/waseem_v3.png?q=best&m=210&webp=1&alpha=1"/>
+                                <img className="team-img" src="https://th.bing.com/th/id/OIP.cIu6-WdfUR3uKMR3ustr2wHaKl?pid=ImgDet&rs=1"/>
                                 <h2 className="team-name">Waseem Alim</h2>
                                 <p className="team-title text-justify ">Founder & Chief Executive Officer</p>
                                 <p className="com-des text-justify">
@@ -78,7 +78,7 @@ export default function Team () {
 
                         <Col lg={3} md={6} md={12} className="mt-3 text-center animation">
                             <div className="mt-2 mb-2">
-                                <img className="team-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Team/images/waseem_v3.png?q=best&m=210&webp=1&alpha=1"/>
+                                <img className="team-img" src="https://th.bing.com/th/id/OIP.cIu6-WdfUR3uKMR3ustr2wHaKl?pid=ImgDet&rs=1"/>
                                 <h2 className="team-name">Waseem Alim</h2>
                                 <p className="team-title text-justify ">Founder & Chief Executive Officer</p>
                                 <p className="com-des text-justify">
@@ -90,7 +90,7 @@ export default function Team () {
 
                         <Col lg={3} md={6} md={12} className="mt-3 text-center animation">
                             <div className="mt-2 mb-2">
-                                <img className="team-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Team/images/waseem_v3.png?q=best&m=210&webp=1&alpha=1"/>
+                                <img className="team-img" src="https://th.bing.com/th/id/OIP.cIu6-WdfUR3uKMR3ustr2wHaKl?pid=ImgDet&rs=1"/>
                                 <h2 className="team-name">Waseem Alim</h2>
                                 <p className="team-title text-justify ">Founder & Chief Executive Officer</p>
                                 <p className="com-des text-justify">
@@ -101,7 +101,7 @@ export default function Team () {
 
                         <Col lg={3} md={6} md={12} className="mt-3 text-center animation">
                             <div className="mt-2 mb-2">
-                                <img className="team-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Team/images/waseem_v3.png?q=best&m=210&webp=1&alpha=1"/>
+                                <img className="team-img" src="https://th.bing.com/th/id/OIP.cIu6-WdfUR3uKMR3ustr2wHaKl?pid=ImgDet&rs=1"/>
                                 <h2 className="team-name">Waseem Alim</h2>
                                 <p className="team-title text-justify ">Founder & Chief Executive Officer</p>
                                 <p className="com-des text-justify">
@@ -112,7 +112,7 @@ export default function Team () {
 
                         <Col lg={3} md={6} md={12} className="mt-3 text-center animation">
                             <div className="mt-2 mb-2">
-                                <img className="team-img" src="https://chaldn.com/asset/Egg.Grocery.Fabric/Egg.Grocery.Web/1.5.0+DataCenter-Release-2368/Default/components/page/Team/images/waseem_v3.png?q=best&m=210&webp=1&alpha=1"/>
+                                <img className="team-img" src="https://th.bing.com/th/id/OIP.cIu6-WdfUR3uKMR3ustr2wHaKl?pid=ImgDet&rs=1"/>
                                 <h2 className="team-name">Waseem Alim</h2>
                                 <p className="team-title text-justify ">Founder & Chief Executive Officer</p>
                                 <p className="com-des text-justify">
